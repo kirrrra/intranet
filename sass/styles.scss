@@ -262,9 +262,21 @@ $main_font_color: #ffffff;
 }
 
 .ph {
-  background-color: cornflowerblue;
-  height: 120px;
+  max-height: 120px;
   margin: 5px;
+  img {
+    height: 120px;
+    width: 130px;
+    position: relative;
+  }
+  p {
+    position: absolute;
+    bottom: 0;
+    color: #ffffff;
+    font: 400 14px Lato;
+    margin-left: 10px;
+
+  }
 }
 
 .otsu {
