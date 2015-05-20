@@ -237,6 +237,28 @@ $main_font_color: #ffffff;
     color: #ffffff;
     font: 400 18px Lato;
   }
+  p:first-child {
+    color: rgba(237, 237, 237, 0.7);
+    font: 500 10px Lato;
+  }
+  p {
+    color: #ffffff;
+    font: 300 14px Lato;
+  }
+  .more {
+    a {
+      color: #ededed;
+      font: 500 12px Lato;
+      margin-right: 30px;
+    }
+  }
+  .all-news {
+    a {
+      color: rgba(255, 255, 255, 0.5);
+      font: 400 11px Lato;
+      margin-right: 30px;
+    }
+  }
 }
 
 .ph {
@@ -247,6 +269,20 @@ $main_font_color: #ffffff;
 
 .otsu {
   background-color: #EC5A24;
-  height: 100px;
+  min-height: 100px;
   margin: 5px;
+  padding-left: 30px;
+  h3 {
+    color: #ffffff;
+    font: 400 18px Lato;
+  }
+  p {
+   color: #ededed;
+    font: 700 12px Lato;
+  }
+  a {
+    color: rgba(255, 255, 255, 0.5);
+    font: 400 11px Lato;
+    margin-right: 30px;
+  }
 }
