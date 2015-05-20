@@ -69,10 +69,22 @@
     color: #4d4d4d;
     font: 400 18px 'Lato';
   }
-  button {
+  a {
     color: #4d4d4d;
-    font: 400 12px 'Lato';
-    border: none;
+    font: 400 12px Lato;
+    text-decoration: none;
+  }
+  ul {
+    padding-top: 20px;
+  }
+  li {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  li.active {
+    background-color: #e3dbd1;
+    border-bottom: 2px solid #C1976D;
   }
 }
 
