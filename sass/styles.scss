@@ -16,13 +16,18 @@
       display: inline-block;
     }
 
-    p {
+    .brand {
       margin-left: 20px;
       color: #ffffff;
       font: 400 14px 'Arial';
       text-transform: uppercase;
-      border-right: 1px solid black;
+      border-right: 1px solid #06949B;
       padding-right: 25px;
+    }
+    a {
+      color: #ffffff;
+      font: 400 12px 'Lato';
+      border-right: 1px solid #06949B;
     }
   }
 
