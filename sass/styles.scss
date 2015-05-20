@@ -86,6 +86,7 @@
   h3 {
     color: #4d4d4d;
     font: 400 18px 'Lato';
+    margin-left: 40px;
   }
   a {
     color: #4d4d4d;
@@ -99,12 +100,30 @@
     display: inline-block;
     padding-left: 10px;
     padding-right: 10px;
+
   }
   li.active {
     background-color: #e3dbd1;
     border-bottom: 2px solid #C1976D;
   }
+  table {
+    margin-left: 40px;
+
+  }
+  .bottom {
+    position:relative;
+  }
+  .show-all-container {
+    height: 100%;
+  }
+  .show-all {
+    color: rgba(255, 255, 255, 0.5);
+    font: 400 11px Lato;
+    bottom: 0;
+
+  }
 }
+
 
 .bd {
   background-color: #29A6DD;
