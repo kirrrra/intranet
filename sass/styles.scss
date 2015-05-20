@@ -183,12 +183,41 @@ $main_font_color: #ffffff;
   background-color: #E81C24;
   height: 215px;
   margin: 5px;
+  padding-left: 30px;
+  h3 {
+    color: #ffffff;
+    font: 400 18px Lato;
+  }
+  p {
+    color: rgba(255, 255, 255, 0.5);
+    font: 400 14px Lato;
+  }
+  table {
+    border-spacing: 10px;
+    border-collapse: separate;
+    color: #ededed;
+    font: 300 12px Lato;
+    a{
+      text-decoration: none;
+      color: #ededed;
+    }
+  }
+  .show-all {
+    color: rgba(255, 255, 255, 0.5);
+    font: 400 11px Lato;
+    margin-right: 30px;
+  }
 }
 
 .news {
   background-color: #00A498;
   height: 162px;
   margin: 5px;
+  padding-left: 30px;
+  h3 {
+    color: #ffffff;
+    font: 400 18px Lato;
+  }
 }
 
 .ph {
