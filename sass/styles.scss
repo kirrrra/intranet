@@ -10,6 +10,8 @@
 // Import Font Awesome
 @import "font-awesome/font-awesome";
 
+$main_font_color: #ffffff;
+
 .navbar-top {
 
   @mixin topbar-divider {
@@ -17,7 +19,7 @@
   }
 
   @mixin topbar-links {
-    color: #ffffff;
+    color: $main_font_color;
     font: 400 12px 'Lato', 400 12px 'Arial';
     @include topbar-divider;
   }
@@ -29,7 +31,7 @@
 
     .brand {
       margin-left: 20px;
-      color: #ffffff;
+      color: $main_font_color;
       font: 400 14px 'Arial';
       text-transform: uppercase;
       padding-right: 25px;
@@ -42,13 +44,13 @@
 
   .navbar-left {
     .navbar-icon, .navbar-icon:hover {
-      color: #ffffff;
+      color: $main_font_color;
     }
   }
 
   .navbar-right {
     .topbar-text, .topbar-text:hover {
-      color: #ffffff;
+      color: $main_font_color;
       @include topbar-links;
     }
   }
@@ -64,17 +66,63 @@
 }
 
 
-.doc {
-  background-color: #662D8C;
+#workflow {
+
+  $background_color: #9574ac;
+
+  @mixin digit-in-circle {
+    border-radius: 50%;
+    behavior: url(./pie/PIE.htc);
+    width: 36px;
+    padding: 5px;
+    text-align: center;
+    font: 18px Arial, sans-serif;
+  }
+
+  background-color: $background_color;
   height: 325px;
   margin: 5px;
-  h2 {
-    color: #ffffff;
-    font: 400 36px 'Lato';
+  margin-left: 0;
+  padding-left: 25px;
+
+  a, a:hover {
+    text-decoration: none;
+    color: $main_font_color;
   }
-  p {
-    color: #ffffff;
-    font: 400 14px 'Lato';
+
+  .heading {
+    border-bottom: 1px solid white;
+
+    h2 {
+      color: $main_font_color;
+      font: 400 36px 'Lato', sans-serif;
+    }
+
+    p {
+      margin-top: 20px;
+      color: $main_font_color;
+      font: 400 14px 'Lato', sans-serif;
+    }
+
+    .count-documents {
+      background: #fff;
+      color: #000000;
+      @include digit-in-circle;
+    }
+  }
+
+  ul {
+    margin-top: 40px;
+    list-style-type: none;
+    line-height: 3em;
+    border-right: 1px solid #ffffff;
+
+    .count-documents-o {
+      color: $main_font_color;
+      background: $background_color;
+      border: 1px solid $main_font_color;
+      @include digit-in-circle;
+    }
   }
 
 }

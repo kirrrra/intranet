@@ -61,16 +61,52 @@
           <!-- Upper tile -->
           <div class="row row-no-padding">
             <div class="col-md-12">
-              <div class="doc">
-                <div class="row">
+              <section id="workflow">
+                <div class="row row-no-padding heading">
                   <div class="col-md-8">
                     <h2>Документооборот</h2>
                   </div>
                   <div class="col-md-4">
-                    <p>Срок исполнения</p>
+                    <p><i class="fa fa-bell-o"></i> Срок исполнения</p>
+                    <p><span class="count-documents">10</span> Сегодня</p>
                   </div>
                 </div>
-              </div>
+                <div class="row row-no-padding">
+                  <div class="col-md-4">
+                    <ul>
+                      <li>
+                        <a href="#"><span class="count-documents-o">10</span> Новые</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4">
+                    <ul>
+                      <li>
+                        <a href="#"><span class="count-documents-o">11</span> На согласовании</a>
+                      </li>
+                      <li>
+                        <a href="#"><span class="count-documents-o">12</span> На подписании</a>
+                      </li>
+                      <li>
+                        <a href="#"><span class="count-documents-o">10</span> На регистрации</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4">
+                    <ul>
+                      <li>
+                        <a href="#"><span class="count-documents-o">14</span> На исполнении</a>
+                      </li>
+                      <li>
+                        <a href="#"><span class="count-documents-o">10</span> Ожидают поправки</a>
+                      </li>
+                      <li>
+                        <a href="#"><span class="count-documents-o">18</span> Завершенные</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
             </div>
           </div>
 
@@ -153,13 +189,13 @@
     <script src="javascripts/bootstrap.min.js"></script>
     <script src="javascripts/owl.carousel.min.js"></script>
     <script>
-      $(document).ready(function() {
+$(document).ready(function() {
 
-        $("#footer-carousel").owlCarousel({
-          navigation: true
-        });
+  $("#footer-carousel").owlCarousel({
+    navigation: true
+  });
 
-      });
+});
     </script>
   </body>
 </html>
