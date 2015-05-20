@@ -192,13 +192,39 @@ $main_font_color: #ffffff;
 }
 
 
-.bd {
+#birthdays {
   background-color: #4eb2de;
   height: 215px;
   margin: 5px;
+
+  h3 {
+    padding-left: 25px;
+    color: #ffffff;
+    font: 18px 'Lato', sans-serif;
+  }
+
+  .owl-carousel {
+    img {
+      height: 100px;
+    }
+  }
+
+  .caption-name {
+    color: #4d4d4d;
+    font: 12px 'Lato', sans-serif;
+    line-height: 1px;
+    margin-top: 10px;
+  }
+
+  .caption-position {
+    color: #4d4d4d;
+    font: 12px 'LatoLight';
+    font-style: italic;
+  }
+
 }
 
-.uve {
+#notifications {
   background-color: #e7434a;
   height: 215px;
   margin: 5px;
@@ -228,7 +254,7 @@ $main_font_color: #ffffff;
   }
 }
 
-.news {
+#news {
   background-color: #2db0a7;
   height: 162px;
   margin: 5px;

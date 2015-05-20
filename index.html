@@ -167,11 +167,40 @@
         <div class="col-md-5">
           <div class="row row-no-padding">
             <div class="col-md-5">
-              <div class="bd"></div>
+              <section id="birthdays">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h3>Дни рождения</h3>
+
+                    <div class="row">
+                      <div class="col-md-6 col-md-offset-3 text-center">
+                        <div id="birthdays-carousel" class="owl-carousel">
+                          <div><img src="images/avatar_01.png" class="img-circle" alt=""></div>
+                          <div><img src="images/avatar_01.png" class="img-circle" alt=""></div>
+                          <div><img src="images/avatar_01.png" class="img-circle" alt=""></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12 text-center">
+                        <p class="caption-name">Исаев А.Б.</p>
+                        <p class="caption-position">заместитель-аппарата</p>
+                      </div>
+                    </div>
+<!--
+                    <div class="row all-birthdays">
+                      <div class="col-md-12 text-right">
+                        <a href="#">Показать всех</a>
+                      </div>
+                    </div>
+-->
+                  </div>
+                </div>
+              </section>
             </div>
 
             <div class="col-md-7">
-              <div class="uve">
+              <section id="notifications">
                 <div class="row">
                   <div class="col-md-12">
                     <h3>Уведомления</h3>
@@ -205,13 +234,13 @@
                     <a href="#" class="show-all">Показать все уведомления</a>
                   </div>
                 </div>
-              </div>
+              </section>
             </div>
           </div>
 
           <div class="row row-no-padding">
             <div class="col-md-12">
-              <div class="news">
+              <section id="news">
                 <div class="row">
                   <div class="col-md-6">
                     <h3>Новости</h3>
@@ -238,7 +267,7 @@
                     <a href="#">Показать все новости</a>
                   </div>
                 </div>
-              </div>
+              </section>
             </div>
           </div>
 
@@ -314,8 +343,15 @@
     <script>
       $(document).ready(function() {
 
+        $("#birthdays-carousel").owlCarousel({
+          navigation: false,
+          pagination: false,
+          items: 1
+        });
+
         $("#footer-carousel").owlCarousel({
-          navigation: true
+          navigation: true,
+          pagination: false
         });
 
       });
