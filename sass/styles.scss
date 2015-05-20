@@ -10,6 +10,9 @@
 // Import Font Awesome
 @import "font-awesome/font-awesome";
 
+// Import Lato font
+@import "lato";
+
 $main_font_color: #ffffff;
 
 .navbar-top {
@@ -20,7 +23,7 @@ $main_font_color: #ffffff;
 
   @mixin topbar-links {
     color: $main_font_color;
-    font: 400 12px 'Lato', 400 12px 'Arial';
+    font: 12px 'LatoLight', sans-serif;
     @include topbar-divider;
   }
 
@@ -32,7 +35,7 @@ $main_font_color: #ffffff;
     .brand {
       margin-left: 20px;
       color: $main_font_color;
-      font: 400 14px 'Arial';
+      font: 14px 'Lato', sans-serif;
       text-transform: uppercase;
       padding-right: 25px;
       @include topbar-divider;
@@ -76,17 +79,18 @@ $main_font_color: #ffffff;
     width: 36px;
     padding: 5px;
     text-align: center;
-    font: 18px Arial, sans-serif;
+    font: 18px 'Lato', sans-serif;
   }
 
   background-color: $background_color;
-  height: 325px;
   margin: 5px;
   margin-left: 0;
   padding-left: 25px;
+  padding-bottom: 50px;
 
-  a, a:hover {
+  a {
     text-decoration: none;
+    font: 14px 'LatoLight', sans-serif;
     color: $main_font_color;
   }
 
@@ -95,13 +99,13 @@ $main_font_color: #ffffff;
 
     h2 {
       color: $main_font_color;
-      font: 400 36px 'Lato', sans-serif;
+      font: 36px 'LatoLight', sans-serif;
     }
 
     p {
       margin-top: 20px;
       color: $main_font_color;
-      font: 400 14px 'Lato', sans-serif;
+      font: 14px 'LatoLight', sans-serif;
     }
 
     .count-documents {
@@ -127,48 +131,63 @@ $main_font_color: #ffffff;
 
 }
 
-.sob {
-  background-color: #C2AD94;
-  height: 292px;
+#events {
+
+  $background_color: #C2AD94;
+
   margin: 5px;
+  margin-left: 0;
+  padding-left: 25px;
+  background-color: $background_color;
+
   h3 {
     color: #4d4d4d;
-    font: 400 18px 'Lato';
+    font: 18px 'Lato', sans-serif;
     margin-left: 40px;
   }
-  a {
-    color: #4d4d4d;
-    font: 400 12px Lato;
-    text-decoration: none;
-  }
-  ul {
+
+  ul.toggle-date-range {
     padding-top: 20px;
-  }
-  li {
-    display: inline-block;
-    padding-left: 10px;
-    padding-right: 10px;
+
+    li {
+      display: inline-block;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    li.active {
+      background-color: #e3dbd1;
+      border-bottom: 2px solid #C1976D;
+    }
+
+    a {
+      color: #4d4d4d;
+      font: 12px 'Lato', sans-serif;
+      text-decoration: none;
+    }
 
   }
-  li.active {
-    background-color: #e3dbd1;
-    border-bottom: 2px solid #C1976D;
-  }
+
   table {
     margin-left: 40px;
+    border-spacing: 10px;
+    border-collapse: separate;
+    font: 14px 'LatoLight', sans-serif;
 
+    tr:first-child {
+      font: 14px 'LatoBold', sans-serif;
+    }
+
+    a {
+      text-decoration: none;
+      color: #000000;
+    }
   }
-  .bottom {
-    position:relative;
-  }
-  .show-all-container {
-    height: 100%;
-  }
+
   .show-all {
     color: rgba(255, 255, 255, 0.5);
-    font: 400 11px Lato;
-    bottom: 0;
-
+    font: 400 11px Lato, sans-serif;
+    margin-right: 35px;
   }
 }
 
