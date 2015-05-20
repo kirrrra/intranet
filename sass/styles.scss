@@ -7,12 +7,27 @@
 // Import Bootstrap for Sass
 @import "bootstrap";
 
-.navbar-brand {
-  img {
-    padding-top: 0;
-    padding-bottom: 0;
-    width: 105px;
-    height: 52px;
+// Import Font Awesome
+@import "../fonts/font-awesome/font-awesome";
+
+.navbar-top {
+  .navbar-brand {
+    img, p {
+      display: inline-block;
+    }
+
+    p {
+      margin-left: 20px;
+      color: #ffffff;
+      font: 400 14px 'Arial';
+      text-transform: uppercase;
+      border-right: 1px solid black;
+      padding-right: 25px;
+    }
+  }
+
+  .navbar-nav {
+
   }
 }
 
