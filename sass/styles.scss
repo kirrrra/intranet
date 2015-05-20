@@ -7,6 +7,14 @@
 // Import Bootstrap for Sass
 @import "bootstrap";
 
+.navbar-brand {
+  img {
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 105px;
+    height: 52px;
+  }
+}
 
 .row-no-padding {
   margin: 0 !important;
