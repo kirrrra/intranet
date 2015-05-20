@@ -8591,43 +8591,64 @@ button.close {
   height: 325px;
   margin: 5px;
 }
+/* line 33, ../sass/styles.scss */
+.doc h2 {
+  color: #ffffff;
+  font: 400 36px 'Lato';
+}
+/* line 37, ../sass/styles.scss */
+.doc p {
+  color: #ffffff;
+  font: 400 14px 'Lato';
+}
 
-/* line 36, ../sass/styles.scss */
+/* line 44, ../sass/styles.scss */
 .sob {
   background-color: #C2AD94;
   height: 292px;
   margin: 5px;
 }
+/* line 48, ../sass/styles.scss */
+.sob h3 {
+  color: #4d4d4d;
+  font: 400 18px 'Lato';
+}
+/* line 52, ../sass/styles.scss */
+.sob button {
+  color: #4d4d4d;
+  font: 400 12px 'Lato';
+  border: none;
+}
 
-/* line 42, ../sass/styles.scss */
+/* line 59, ../sass/styles.scss */
 .bd {
   background-color: #29A6DD;
   height: 215px;
   margin: 5px;
 }
 
-/* line 48, ../sass/styles.scss */
+/* line 65, ../sass/styles.scss */
 .uve {
   background-color: #E81C24;
   height: 215px;
   margin: 5px;
 }
 
-/* line 54, ../sass/styles.scss */
+/* line 71, ../sass/styles.scss */
 .news {
   background-color: #00A498;
   height: 162px;
   margin: 5px;
 }
 
-/* line 60, ../sass/styles.scss */
+/* line 77, ../sass/styles.scss */
 .ph {
   background-color: cornflowerblue;
   height: 120px;
   margin: 5px;
 }
 
-/* line 66, ../sass/styles.scss */
+/* line 83, ../sass/styles.scss */
 .otsu {
   background-color: #EC5A24;
   height: 100px;
