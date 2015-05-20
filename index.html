@@ -18,78 +18,84 @@
   </head>
   <body>
 
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-top">
       <div class="container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand" href="#">
-             <img src="images/logo.png" alt="" />
+            <img src="images/logo.png" class="image-responsive" alt="">
+            <p>Внутренний портал судебных органов</p>
           </a>
         </div>
+        <ul class="nav navbar-nav">
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+        </ul>
       </div>
     </nav>
 
+    <div class="container-fluid">
+      <div class="row row-no-padding">
 
-    <div class="row row-no-padding">
-
-      <div class="col-md-7">
-        <div class="row row-no-padding">
-          <div class="col-md-12">
-            <div class="doc"></div>
+        <div class="col-md-7">
+          <div class="row row-no-padding">
+            <div class="col-md-12">
+              <div class="doc"></div>
+            </div>
+          </div>
+          <div class="row row-no-padding">
+            <div class="col-md-12">
+              <div class="sob"></div>
+            </div>
           </div>
         </div>
-        <div class="row row-no-padding">
-          <div class="col-md-12">
-            <div class="sob"></div>
+
+        <div class="col-md-5">
+          <div class="row row-no-padding">
+            <div class="col-md-5">
+              <div class="bd"></div>
+            </div>
+            <div class="col-md-7">
+              <div class="uve"></div>
+            </div>
+          </div>
+          <div class="row row-no-padding">
+            <div class="col-md-12">
+              <div class="news"></div>
+            </div>
+          </div>
+          <div class="row row-no-padding">
+            <div class="col-md-3">
+              <div class="ph"></div>
+            </div>
+            <div class="col-md-3">
+              <div class="ph"></div>
+            </div>
+            <div class="col-md-3">
+              <div class="ph"></div>
+            </div>
+            <div class="col-md-3">
+              <div class="ph"></div>
+            </div>
+          </div>
+          <div class="row row-no-padding">
+            <div class="col-md-12">
+              <div class="otsu"></div>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="col-md-5">
-        <div class="row row-no-padding">
-          <div class="col-md-5">
-            <div class="bd"></div>
+      <div class="row">
+        <div class="col-md-12">
+          <div id="footer-carousel" class="owl-carousel">
+            <div> Your Content </div>
+            <div> Your Content </div>
+            <div> Your Content </div>
+            <div> Your Content </div>
+            <div> Your Content </div>
+            <div> Your Content </div>
+            <div> Your Content </div>
           </div>
-          <div class="col-md-7">
-            <div class="uve"></div>
-          </div>
-        </div>
-        <div class="row row-no-padding">
-          <div class="col-md-12">
-            <div class="news"></div>
-          </div>
-        </div>
-        <div class="row row-no-padding">
-          <div class="col-md-3">
-            <div class="ph"></div>
-          </div>
-          <div class="col-md-3">
-            <div class="ph"></div>
-          </div>
-          <div class="col-md-3">
-            <div class="ph"></div>
-          </div>
-          <div class="col-md-3">
-            <div class="ph"></div>
-          </div>
-        </div>
-        <div class="row row-no-padding">
-          <div class="col-md-12">
-            <div class="otsu"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-12">
-        <div id="footer-carousel" class="owl-carousel">
-          <div> Your Content </div>
-          <div> Your Content </div>
-          <div> Your Content </div>
-          <div> Your Content </div>
-          <div> Your Content </div>
-          <div> Your Content </div>
-          <div> Your Content </div>
         </div>
       </div>
     </div>
@@ -99,13 +105,13 @@
     <script src="javascripts/bootstrap.min.js"></script>
     <script src="javascripts/owl.carousel.min.js"></script>
     <script>
-      $(document).ready(function() {
+$(document).ready(function() {
 
-        $("#footer-carousel").owlCarousel({
-          navigation: true
-        });
+  $("#footer-carousel").owlCarousel({
+    navigation: true
+  });
 
-      });
+});
     </script>
   </body>
 </html>
