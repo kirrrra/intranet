@@ -8567,123 +8567,59 @@ button.close {
     display: none !important;
   }
 }
-/* line 10, ../sass/styles.scss */
-#sidebar-wrapper {
-  z-index: 1000;
-  position: absolute;
-  width: 50px;
-  height: 100%;
-  overflow-y: auto;
-  background: #000;
-}
-
-/* line 18, ../sass/styles.scss */
-.sidebar-nav {
-  position: absolute;
-  top: 0;
-  width: 250px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-/* line 27, ../sass/styles.scss */
-.sidebar-nav li {
-  text-indent: 20px;
-  line-height: 40px;
-}
-
-/* line 32, ../sass/styles.scss */
-.sidebar-nav li a {
-  display: block;
-  text-decoration: none;
-  color: #999999;
-}
-
-/* line 38, ../sass/styles.scss */
-.sidebar-nav li a:hover {
-  text-decoration: none;
-  color: #fff;
-  background: rgba(255, 255, 255, 0.2);
-}
-
-/* line 44, ../sass/styles.scss */
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus {
-  text-decoration: none;
-}
-
-/* line 49, ../sass/styles.scss */
-.sidebar-nav > .sidebar-brand {
-  height: 65px;
-  font-size: 18px;
-  line-height: 60px;
-}
-
-/* line 55, ../sass/styles.scss */
-.sidebar-nav > .sidebar-brand a {
-  color: #999999;
-}
-
-/* line 59, ../sass/styles.scss */
-.sidebar-nav > .sidebar-brand a:hover {
-  color: #fff;
-  background: none;
-}
-
-/* line 64, ../sass/styles.scss */
+/* line 11, ../sass/styles.scss */
 .row-no-padding {
   margin: 0 !important;
   padding: 0 !important;
 }
-/* line 68, ../sass/styles.scss */
+/* line 15, ../sass/styles.scss */
 .row-no-padding [class*="col-"] {
   padding: 0 !important;
 }
 
-/* line 74, ../sass/styles.scss */
+/* line 21, ../sass/styles.scss */
 .doc {
   background-color: #662D8C;
   height: 325px;
   margin: 5px;
 }
 
-/* line 81, ../sass/styles.scss */
+/* line 28, ../sass/styles.scss */
 .sob {
   background-color: #C2AD94;
   height: 292px;
   margin: 5px;
 }
 
-/* line 87, ../sass/styles.scss */
+/* line 34, ../sass/styles.scss */
 .bd {
   background-color: #29A6DD;
   height: 215px;
   margin: 5px;
 }
 
-/* line 93, ../sass/styles.scss */
+/* line 40, ../sass/styles.scss */
 .uve {
   background-color: #E81C24;
   height: 215px;
   margin: 5px;
 }
 
-/* line 99, ../sass/styles.scss */
+/* line 46, ../sass/styles.scss */
 .news {
   background-color: #00A498;
   height: 162px;
   margin: 5px;
 }
 
-/* line 105, ../sass/styles.scss */
+/* line 52, ../sass/styles.scss */
 .ph {
   background-color: cornflowerblue;
   height: 120px;
   margin: 5px;
 }
 
-/* line 111, ../sass/styles.scss */
+/* line 58, ../sass/styles.scss */
 .otsu {
   background-color: #EC5A24;
   height: 100px;
