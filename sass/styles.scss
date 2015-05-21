@@ -72,6 +72,9 @@ $main_font_color: #ffffff;
       color: #4d4d4d;
       font: 12px / 24px 'Lato', sans-serif;
       border-top: 2px solid #06949b;
+      i {
+        margin-left: 5px;
+      }
     }
 
     .divider {
