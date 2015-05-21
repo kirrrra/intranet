@@ -439,3 +439,40 @@ $main_font_color: #ffffff;
   border-top: 24px solid transparent;
   border-bottom: 24px solid transparent;
 }
+
+//chat
+.chat-container {
+  height: 100%;
+  position: absolute;
+  z-index: 1000;
+}
+.panel {
+  width: 191px;
+}
+.top-bar {
+  height: 40px;
+  width: 190px;
+  background-color: #06949b;
+  color: #ffffff;
+  font: 400 14px Lato;
+  h3 {
+    margin-top: 13px;
+  }
+  a {
+    padding-top: 13px;
+  }
+}
+.sub-bar {
+  border-bottom: 1px solid #808080;
+  height: 35px;
+  p:first-child {
+    color: #666666;
+    font: 300 10px Lato;
+    line-height: 1px;
+  }
+  p {
+    color: #aeaeae;
+    font: 300 10px Lato;
+  }
+}
+
