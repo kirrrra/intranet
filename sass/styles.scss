@@ -171,11 +171,20 @@ $main_font_color: #ffffff;
   table {
     margin-left: 40px;
     border-spacing: 10px;
-    border-collapse: separate;
+    width: 80%;
     font: 14px 'LatoLight', sans-serif;
 
     tr:first-child {
       font: 14px 'LatoBold', sans-serif;
+
+      td {
+        border-top: none;
+      }
+    }
+
+    td {
+      border-top: 1px solid #808080;
+      padding: 10px;
     }
 
     a {
