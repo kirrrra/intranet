@@ -12429,16 +12429,28 @@ nav.sidebar ul li.active a.expandable {
   color: white !important;
 }
 
+<<<<<<< HEAD
 /* line 26, ../sass/styles.scss */
+=======
+/* line 23, ../sass/styles.scss */
+>>>>>>> origin/master
 .content {
   margin-left: 35px;
 }
 
+<<<<<<< HEAD
 /* line 42, ../sass/styles.scss */
 .navbar-top .navbar-brand img, .navbar-top .navbar-brand p {
   display: inline-block;
 }
 /* line 46, ../sass/styles.scss */
+=======
+/* line 39, ../sass/styles.scss */
+.navbar-top .navbar-brand img, .navbar-top .navbar-brand p {
+  display: inline-block;
+}
+/* line 43, ../sass/styles.scss */
+>>>>>>> origin/master
 .navbar-top .navbar-brand .brand {
   margin-left: 20px;
   color: #ffffff;
@@ -12447,38 +12459,72 @@ nav.sidebar ul li.active a.expandable {
   padding-right: 25px;
   border-right: 1px solid #06949B;
 }
+<<<<<<< HEAD
 /* line 54, ../sass/styles.scss */
+=======
+/* line 51, ../sass/styles.scss */
+>>>>>>> origin/master
 .navbar-top .navbar-brand a {
   color: #ffffff;
   font: 12px 'LatoLight', sans-serif;
   border-right: 1px solid #06949B;
 }
+<<<<<<< HEAD
 /* line 61, ../sass/styles.scss */
 .navbar-top .navbar-left .navbar-icon, .navbar-top .navbar-left .navbar-icon:hover {
   color: #ffffff;
 }
 /* line 67, ../sass/styles.scss */
+=======
+/* line 58, ../sass/styles.scss */
+.navbar-top .navbar-left .navbar-icon, .navbar-top .navbar-left .navbar-icon:hover {
+  color: #ffffff;
+}
+/* line 64, ../sass/styles.scss */
+>>>>>>> origin/master
 .navbar-top .navbar-right .topbar-text, .navbar-top .navbar-right .topbar-text:hover {
   color: #ffffff;
   color: #ffffff;
   font: 12px 'LatoLight', sans-serif;
 }
+<<<<<<< HEAD
 /* line 72, ../sass/styles.scss */
+=======
+/* line 68, ../sass/styles.scss */
+.navbar-top .navbar-right .dropdown-menu {
+  color: #4d4d4d;
+  font: 12px / 24px 'Lato', sans-serif;
+  border-top: 2px solid #06949b;
+}
+/* line 74, ../sass/styles.scss */
+>>>>>>> origin/master
 .navbar-top .navbar-right .divider {
   border-right: 1px solid #06949B;
 }
 
+<<<<<<< HEAD
 /* line 78, ../sass/styles.scss */
+=======
+/* line 80, ../sass/styles.scss */
+>>>>>>> origin/master
 .row-no-padding {
   margin: 0 !important;
   padding: 0 !important;
 }
+<<<<<<< HEAD
 /* line 82, ../sass/styles.scss */
+=======
+/* line 84, ../sass/styles.scss */
+>>>>>>> origin/master
 .row-no-padding [class*="col-"] {
   padding: 0 !important;
 }
 
+<<<<<<< HEAD
 /* line 88, ../sass/styles.scss */
+=======
+/* line 90, ../sass/styles.scss */
+>>>>>>> origin/master
 #workflow {
   background-color: #9574ac;
   margin: 5px;
@@ -12486,29 +12532,49 @@ nav.sidebar ul li.active a.expandable {
   padding-left: 25px;
   padding-bottom: 50px;
 }
+<<<<<<< HEAD
 /* line 107, ../sass/styles.scss */
+=======
+/* line 109, ../sass/styles.scss */
+>>>>>>> origin/master
 #workflow a {
   text-decoration: none;
   font: 14px 'LatoLight', sans-serif;
   color: #ffffff;
 }
+<<<<<<< HEAD
 /* line 113, ../sass/styles.scss */
 #workflow .heading {
   border-bottom: 1px solid #ededed;
 }
 /* line 116, ../sass/styles.scss */
+=======
+/* line 115, ../sass/styles.scss */
+#workflow .heading {
+  border-bottom: 1px solid #ededed;
+}
+/* line 118, ../sass/styles.scss */
+>>>>>>> origin/master
 #workflow .heading h2 {
   color: #ffffff;
   font: 36px 'LatoLight', sans-serif;
   padding-bottom: 30px;
 }
+<<<<<<< HEAD
 /* line 122, ../sass/styles.scss */
+=======
+/* line 124, ../sass/styles.scss */
+>>>>>>> origin/master
 #workflow .heading p {
   margin-top: 20px;
   color: #ffffff;
   font: 14px 'LatoLight', sans-serif;
 }
+<<<<<<< HEAD
 /* line 128, ../sass/styles.scss */
+=======
+/* line 130, ../sass/styles.scss */
+>>>>>>> origin/master
 #workflow .heading .count-documents {
   background: #fff;
   color: #000000;
@@ -12519,14 +12585,22 @@ nav.sidebar ul li.active a.expandable {
   text-align: center;
   font: 18px 'Lato', sans-serif;
 }
+<<<<<<< HEAD
 /* line 135, ../sass/styles.scss */
+=======
+/* line 137, ../sass/styles.scss */
+>>>>>>> origin/master
 #workflow ul {
   margin-top: 40px;
   list-style-type: none;
   line-height: 3em;
   border-left: 1px solid #ededed;
 }
+<<<<<<< HEAD
 /* line 141, ../sass/styles.scss */
+=======
+/* line 143, ../sass/styles.scss */
+>>>>>>> origin/master
 #workflow ul .count-documents-o {
   color: #ffffff;
   background: #9574ac;
@@ -12538,46 +12612,78 @@ nav.sidebar ul li.active a.expandable {
   text-align: center;
   font: 18px 'Lato', sans-serif;
 }
+<<<<<<< HEAD
 /* line 149, ../sass/styles.scss */
+=======
+/* line 151, ../sass/styles.scss */
+>>>>>>> origin/master
 #workflow .first_column {
   border-left: none;
 }
 
+<<<<<<< HEAD
 /* line 154, ../sass/styles.scss */
+=======
+/* line 156, ../sass/styles.scss */
+>>>>>>> origin/master
 #events {
   margin: 5px;
   margin-left: 0;
   padding-left: 25px;
   background-color: #C8B7A3;
 }
+<<<<<<< HEAD
 /* line 163, ../sass/styles.scss */
+=======
+/* line 165, ../sass/styles.scss */
+>>>>>>> origin/master
 #events h3 {
   color: #4d4d4d;
   font: 18px 'Lato', sans-serif;
   margin-left: 40px;
 }
+<<<<<<< HEAD
 /* line 169, ../sass/styles.scss */
 #events ul.toggle-date-range {
   padding-top: 20px;
 }
 /* line 172, ../sass/styles.scss */
+=======
+/* line 171, ../sass/styles.scss */
+#events ul.toggle-date-range {
+  padding-top: 20px;
+}
+/* line 174, ../sass/styles.scss */
+>>>>>>> origin/master
 #events ul.toggle-date-range li {
   display: inline-block;
   padding-left: 10px;
   padding-right: 10px;
 }
+<<<<<<< HEAD
 /* line 178, ../sass/styles.scss */
+=======
+/* line 180, ../sass/styles.scss */
+>>>>>>> origin/master
 #events ul.toggle-date-range li.active {
   background-color: #e3dbd1;
   border-bottom: 2px solid #C1976D;
 }
+<<<<<<< HEAD
 /* line 183, ../sass/styles.scss */
+=======
+/* line 185, ../sass/styles.scss */
+>>>>>>> origin/master
 #events ul.toggle-date-range a {
   color: #4d4d4d;
   font: 12px 'Lato', sans-serif;
   text-decoration: none;
 }
+<<<<<<< HEAD
 /* line 191, ../sass/styles.scss */
+=======
+/* line 193, ../sass/styles.scss */
+>>>>>>> origin/master
 #events table {
   margin-left: 40px;
   border-spacing: 10px;
@@ -12585,6 +12691,7 @@ nav.sidebar ul li.active a.expandable {
   font: 14px 'LatoLight', sans-serif;
   margin-bottom: 50px;
 }
+<<<<<<< HEAD
 /* line 198, ../sass/styles.scss */
 #events table tr:first-child {
   font: 14px 'LatoBold', sans-serif;
@@ -12594,70 +12701,125 @@ nav.sidebar ul li.active a.expandable {
   border-top: none;
 }
 /* line 206, ../sass/styles.scss */
+=======
+/* line 200, ../sass/styles.scss */
+#events table tr:first-child {
+  font: 14px 'LatoBold', sans-serif;
+}
+/* line 203, ../sass/styles.scss */
+#events table tr:first-child td {
+  border-top: none;
+}
+/* line 208, ../sass/styles.scss */
+>>>>>>> origin/master
 #events table td {
   border-top: 1px solid #808080;
   padding: 10px;
 }
+<<<<<<< HEAD
 /* line 211, ../sass/styles.scss */
+=======
+/* line 213, ../sass/styles.scss */
+>>>>>>> origin/master
 #events table a {
   text-decoration: none;
   color: #000000;
 }
+<<<<<<< HEAD
 /* line 217, ../sass/styles.scss */
+=======
+/* line 219, ../sass/styles.scss */
+>>>>>>> origin/master
 #events .show-all {
   color: rgba(255, 255, 255, 0.5);
   font: 400 11px Lato, sans-serif;
   margin-right: 35px;
 }
 
+<<<<<<< HEAD
 /* line 225, ../sass/styles.scss */
+=======
+/* line 227, ../sass/styles.scss */
+>>>>>>> origin/master
 #birthdays {
   min-height: 215px;
   margin: 5px;
   background-color: #4eb2de;
 }
+<<<<<<< HEAD
 /* line 233, ../sass/styles.scss */
+=======
+/* line 235, ../sass/styles.scss */
+>>>>>>> origin/master
 #birthdays h3 {
   padding-left: 25px;
   color: #ffffff;
   font: 18px 'Lato', sans-serif;
 }
+<<<<<<< HEAD
 /* line 240, ../sass/styles.scss */
 #birthdays .owl-carousel img {
   height: 100px;
 }
 /* line 245, ../sass/styles.scss */
+=======
+/* line 242, ../sass/styles.scss */
+#birthdays .owl-carousel img {
+  height: 100px;
+}
+/* line 247, ../sass/styles.scss */
+>>>>>>> origin/master
 #birthdays .caption-name {
   color: #4d4d4d;
   font: 12px 'Lato', sans-serif;
   line-height: 1px;
   margin-top: 10px;
 }
+<<<<<<< HEAD
 /* line 252, ../sass/styles.scss */
+=======
+/* line 254, ../sass/styles.scss */
+>>>>>>> origin/master
 #birthdays .caption-position {
   color: #4d4d4d;
   font: 12px 'LatoLight', sans-serif;
   font-style: italic;
 }
 
+<<<<<<< HEAD
 /* line 260, ../sass/styles.scss */
+=======
+/* line 262, ../sass/styles.scss */
+>>>>>>> origin/master
 #notifications {
   min-height: 215px;
   margin: 5px;
   padding-left: 30px;
   background-color: #e7434a;
 }
+<<<<<<< HEAD
 /* line 269, ../sass/styles.scss */
+=======
+/* line 271, ../sass/styles.scss */
+>>>>>>> origin/master
 #notifications h3 {
   color: #ffffff;
   font: 18px 'Lato', sans-serif;
 }
+<<<<<<< HEAD
 /* line 273, ../sass/styles.scss */
+=======
+/* line 275, ../sass/styles.scss */
+>>>>>>> origin/master
 #notifications p {
   color: rgba(255, 255, 255, 0.5);
   font: 14px 'Lato', sans-serif;
 }
+<<<<<<< HEAD
 /* line 277, ../sass/styles.scss */
+=======
+/* line 279, ../sass/styles.scss */
+>>>>>>> origin/master
 #notifications table {
   border-spacing: 10px;
   border-collapse: separate;
@@ -12665,16 +12827,25 @@ nav.sidebar ul li.active a.expandable {
   font: 12px 'Lato', sans-serif;
   width: 90%;
 }
+<<<<<<< HEAD
 /* line 283, ../sass/styles.scss */
+=======
+/* line 285, ../sass/styles.scss */
+>>>>>>> origin/master
 #notifications table a {
   text-decoration: none;
   color: #ededed;
 }
+<<<<<<< HEAD
 /* line 289, ../sass/styles.scss */
+=======
+/* line 291, ../sass/styles.scss */
+>>>>>>> origin/master
 #notifications table tr td {
   line-height: 2em;
   border-bottom: 1px solid #ffffff;
 }
+<<<<<<< HEAD
 /* line 293, ../sass/styles.scss */
 #notifications table tr td:first-child {
   border-bottom: none;
@@ -12684,63 +12855,114 @@ nav.sidebar ul li.active a.expandable {
   border-bottom: none;
 }
 /* line 305, ../sass/styles.scss */
+=======
+/* line 295, ../sass/styles.scss */
+#notifications table tr td:first-child {
+  border-bottom: none;
+}
+/* line 301, ../sass/styles.scss */
+#notifications table tr:last-child td {
+  border-bottom: none;
+}
+/* line 307, ../sass/styles.scss */
+>>>>>>> origin/master
 #notifications .show-all {
   color: rgba(255, 255, 255, 0.5);
   font: 400 11px Lato;
   margin-right: 30px;
 }
 
+<<<<<<< HEAD
 /* line 312, ../sass/styles.scss */
+=======
+/* line 314, ../sass/styles.scss */
+>>>>>>> origin/master
 #news {
   background-color: #2db0a7;
   min-height: 162px;
   margin: 5px;
   padding-left: 30px;
 }
+<<<<<<< HEAD
 /* line 318, ../sass/styles.scss */
+=======
+/* line 320, ../sass/styles.scss */
+>>>>>>> origin/master
 #news h3 {
   color: #ffffff;
   font: 400 18px Lato;
 }
+<<<<<<< HEAD
 /* line 322, ../sass/styles.scss */
+=======
+/* line 324, ../sass/styles.scss */
+>>>>>>> origin/master
 #news p:first-child {
   color: rgba(237, 237, 237, 0.7);
   font: 500 10px Lato;
 }
+<<<<<<< HEAD
 /* line 326, ../sass/styles.scss */
+=======
+/* line 328, ../sass/styles.scss */
+>>>>>>> origin/master
 #news p {
   color: #ffffff;
   font: 300 14px Lato;
 }
+<<<<<<< HEAD
 /* line 330, ../sass/styles.scss */
 #news .more {
   border-bottom: 1px solid #ededed;
 }
 /* line 332, ../sass/styles.scss */
+=======
+/* line 332, ../sass/styles.scss */
+#news .more {
+  border-bottom: 1px solid #ededed;
+}
+/* line 334, ../sass/styles.scss */
+>>>>>>> origin/master
 #news .more a {
   color: #ededed;
   font: 500 12px Lato;
   margin-right: 30px;
 }
+<<<<<<< HEAD
 /* line 339, ../sass/styles.scss */
+=======
+/* line 341, ../sass/styles.scss */
+>>>>>>> origin/master
 #news .all-news a {
   color: rgba(255, 255, 255, 0.5);
   font: 400 11px Lato;
   margin-right: 30px;
 }
 
+<<<<<<< HEAD
 /* line 347, ../sass/styles.scss */
+=======
+/* line 349, ../sass/styles.scss */
+>>>>>>> origin/master
 .ph {
   max-height: 120px;
   margin: 5px;
 }
+<<<<<<< HEAD
 /* line 350, ../sass/styles.scss */
+=======
+/* line 352, ../sass/styles.scss */
+>>>>>>> origin/master
 .ph img {
   height: 120px;
   width: 130px;
   position: relative;
 }
+<<<<<<< HEAD
 /* line 355, ../sass/styles.scss */
+=======
+/* line 357, ../sass/styles.scss */
+>>>>>>> origin/master
 .ph p {
   position: absolute;
   bottom: 0;
@@ -12749,41 +12971,69 @@ nav.sidebar ul li.active a.expandable {
   margin-left: 10px;
 }
 
+<<<<<<< HEAD
 /* line 365, ../sass/styles.scss */
+=======
+/* line 367, ../sass/styles.scss */
+>>>>>>> origin/master
 .otsu {
   background-color: #ea754a;
   min-height: 100px;
   margin: 5px;
   padding-left: 30px;
 }
+<<<<<<< HEAD
 /* line 370, ../sass/styles.scss */
+=======
+/* line 372, ../sass/styles.scss */
+>>>>>>> origin/master
 .otsu h3 {
   color: #ffffff;
   font: 400 18px Lato;
 }
+<<<<<<< HEAD
 /* line 374, ../sass/styles.scss */
+=======
+/* line 376, ../sass/styles.scss */
+>>>>>>> origin/master
 .otsu p {
   color: #ededed;
   font: 700 12px Lato;
 }
+<<<<<<< HEAD
 /* line 378, ../sass/styles.scss */
+=======
+/* line 380, ../sass/styles.scss */
+>>>>>>> origin/master
 .otsu a {
   color: rgba(255, 255, 255, 0.5);
   font: 400 11px Lato;
   margin-right: 30px;
 }
 
+<<<<<<< HEAD
 /* line 385, ../sass/styles.scss */
+=======
+/* line 387, ../sass/styles.scss */
+>>>>>>> origin/master
 .carousel {
   border-top: 1px solid #c7c7c7;
 }
 
+<<<<<<< HEAD
 /* line 388, ../sass/styles.scss */
+=======
+/* line 390, ../sass/styles.scss */
+>>>>>>> origin/master
 .caret-left {
   position: relative;
 }
 
+<<<<<<< HEAD
 /* line 392, ../sass/styles.scss */
+=======
+/* line 394, ../sass/styles.scss */
+>>>>>>> origin/master
 .caret-left:before {
   content: '';
   position: absolute;
@@ -12794,7 +13044,11 @@ nav.sidebar ul li.active a.expandable {
   border-bottom: 25px solid transparent;
 }
 
+<<<<<<< HEAD
 /* line 402, ../sass/styles.scss */
+=======
+/* line 404, ../sass/styles.scss */
+>>>>>>> origin/master
 .caret-left:after {
   content: '';
   position: absolute;
@@ -12805,12 +13059,20 @@ nav.sidebar ul li.active a.expandable {
   border-bottom: 24px solid transparent;
 }
 
+<<<<<<< HEAD
 /* line 411, ../sass/styles.scss */
+=======
+/* line 413, ../sass/styles.scss */
+>>>>>>> origin/master
 .caret-right {
   position: relative;
 }
 
+<<<<<<< HEAD
 /* line 415, ../sass/styles.scss */
+=======
+/* line 417, ../sass/styles.scss */
+>>>>>>> origin/master
 .caret-right:before {
   content: '';
   position: absolute;
@@ -12821,7 +13083,11 @@ nav.sidebar ul li.active a.expandable {
   border-bottom: 25px solid transparent;
 }
 
+<<<<<<< HEAD
 /* line 425, ../sass/styles.scss */
+=======
+/* line 427, ../sass/styles.scss */
+>>>>>>> origin/master
 .caret-right:after {
   content: '';
   position: absolute;
