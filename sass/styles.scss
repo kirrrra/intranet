@@ -65,6 +65,11 @@ $main_font_color: #ffffff;
       color: $main_font_color;
       @include topbar-links;
     }
+    .dropdown-menu {
+      color: #4d4d4d;
+      font: 12px / 24px 'Lato', sans-serif;
+      border-top: 2px solid #06949b;
+    }
 
     .divider {
       @include topbar-divider;
