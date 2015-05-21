@@ -57,10 +57,8 @@ $main_font_color: #ffffff;
     }
   }
 
-  .navbar-left {
-    .navbar-icon, .navbar-icon:hover {
-      color: $main_font_color;
-    }
+  i {
+    color: $main_font_color;
   }
 
   .navbar-right {
@@ -327,22 +325,43 @@ $main_font_color: #ffffff;
     color: #ffffff;
     font: 400 18px Lato;
   }
-  p:first-child {
-    color: rgba(237, 237, 237, 0.7);
-    font: 500 10px Lato;
+
+  .iconbar {
+    list-style-type: none;
+    margin-right: 30px;
+    margin-top: 10px;
+
+    li {
+      display: inline;
+    }
   }
-  p {
-    color: #ffffff;
-    font: 300 14px Lato;
+
+  .article {
+
+    p:first-child {
+      color: rgba(237, 237, 237, 0.7);
+      font: 500 10px Lato;
+    }
+
+    p {
+      color: #ffffff;
+      font: 300 14px Lato;
+    }
   }
-  .more {
+
+  .article-border {
     border-bottom: 1px solid #ededed;
+  }
+
+  .more {
+
     a {
       color: #ededed;
       font: 500 12px Lato;
       margin-right: 30px;
     }
   }
+
   .all-news {
     a {
       color: rgba(255, 255, 255, 0.5);
