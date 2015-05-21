@@ -267,6 +267,14 @@ $main_font_color: #ffffff;
       text-decoration: none;
       color: #ededed;
     }
+   tr:first-child {
+      td {
+        border-top: none;
+      }
+    }
+  }
+  td {
+    border-top: 1px solid #ffffff;
   }
   .show-all {
     color: rgba(255, 255, 255, 0.5);
@@ -280,6 +288,7 @@ $main_font_color: #ffffff;
   min-height: 162px;
   margin: 5px;
   padding-left: 30px;
+
   h3 {
     color: #ffffff;
     font: 400 18px Lato;
@@ -293,6 +302,7 @@ $main_font_color: #ffffff;
     font: 300 14px Lato;
   }
   .more {
+    border-bottom: 1px solid #ededed;
     a {
       color: #ededed;
       font: 500 12px Lato;
@@ -344,4 +354,54 @@ $main_font_color: #ffffff;
     font: 400 11px Lato;
     margin-right: 30px;
   }
+}
+
+.carousel {
+  border-top: 1px solid #c7c7c7;
+}
+.caret-left {
+  position: relative;
+}
+
+.caret-left:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-right: 25px solid #666666;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+}
+
+.caret-left:after {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  border-right: 24px solid #eeeeee;
+  border-top: 24px solid transparent;
+  border-bottom: 24px solid transparent;
+}
+.caret-right {
+  position: relative;
+}
+
+.caret-right:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 25px solid #666666;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+}
+
+.caret-right:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 1px;
+  border-left: 24px solid #eeeeee;
+  border-top: 24px solid transparent;
+  border-bottom: 24px solid transparent;
 }
