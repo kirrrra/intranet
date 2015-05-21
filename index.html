@@ -38,9 +38,10 @@
           <li><a href="#" class="navbar-icon"><i class="fa fa-life-ring"></i></a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li class="topbar-text"><a href="#">Русский</a></li>
-          <li class="topbar-text dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+          <li><a class="topbar-text" href="#">Русский</a></li>
+          <li><a href="#"><span class="divider"></span></a></li>
+          <li class="dropdown">
+            <a class="topbar-text" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
               Тиштыбаев А.А.
               <span class="fa fa-angle-down"></span>
             </a>
@@ -52,7 +53,36 @@
       </div>
     </nav>
 
-    <div class="container-fluid">
+    <nav class='sidebar sidebar-menu-collapsed'>
+      <ul>
+        <li>
+          <a class='expandable' href='#' title='Dashboard'>
+            <span class='expanded-element'>Dashboard</span>
+            <i class="fa fa-home collapsed-element"></i>
+          </a>
+        </li>
+        <li>
+          <a class='expandable' href='#' title='APIs'>
+            <span class='expanded-element'>APIs</span>
+            <i class="fa fa-home collapsed-element"></i>
+          </a>
+        </li>
+        <li>
+          <a class='expandable' href='#' title='Settings'>
+            <span class='expanded-element'>Settings</span>
+            <i class="fa fa-home collapsed-element"></i>
+          </a>
+        </li>
+        <li>
+          <a class='expandable' href='#' title='Account'>
+            <span class='expanded-element'>Account</span>
+            <i class="fa fa-home collapsed-element"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container-fluid content">
       <div class="row row-no-padding">
 
         <!-- Left half of the screen -->
@@ -337,8 +367,8 @@
           </div>
         </div>
         <div class="col-md-1">
-            <div class="caret-right"></div>
-          </div>
+          <div class="caret-right"></div>
+        </div>
       </div>
     </div>
 
@@ -347,20 +377,56 @@
     <script src="javascripts/bootstrap.min.js"></script>
     <script src="javascripts/owl.carousel.min.js"></script>
     <script>
-      $(document).ready(function() {
+$(document).ready(function() {
 
-        $("#birthdays-carousel").owlCarousel({
-          navigation: false,
-          pagination: false,
-          items: 1
-        });
-
-        $("#footer-carousel").owlCarousel({
-          navigation: true,
-          pagination: false
-        });
-
+  (function() {
+    $(function() {
+      var collapseMyMenu, expandMyMenu, hideMenuTexts, showMenuTexts;
+      expandMyMenu = function() {
+        return $("nav.sidebar").removeClass("sidebar-menu-collapsed").addClass("sidebar-menu-expanded");
+      };
+      collapseMyMenu = function() {
+        return $("nav.sidebar").removeClass("sidebar-menu-expanded").addClass("sidebar-menu-collapsed");
+      };
+      showMenuTexts = function() {
+        return $("nav.sidebar ul a span.expanded-element").show();
+      };
+      hideMenuTexts = function() {
+        return $("nav.sidebar ul a span.expanded-element").hide();
+      };
+      return $(".nav.sidebar").hover(function(e) {
+        if ($(this).parent("nav.sidebar").hasClass("sidebar-menu-collapsed")) {
+          expandMyMenu();
+          showMenuTexts();
+          $(this).css({
+            color: "#000"
+          });
+        } else if ($(this).parent("nav.sidebar").hasClass("sidebar-menu-expanded")) {
+          collapseMyMenu();
+          hideMenuTexts();
+          $(this).css({
+            color: "#FFF"
+          });
+        }
+        return false;
       });
+    });
+
+  }).call(this);
+
+  $("#birthdays-carousel").owlCarousel({
+    navigation: false,
+    pagination: false,
+    items: 1
+  });
+
+  $("#footer-carousel").owlCarousel({
+    navigation: false,
+    pagination: false,
+    items: 5
+  });
+
+});
     </script>
   </body>
 </html>

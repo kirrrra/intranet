@@ -1,3 +1,5 @@
+@import "compass/css3";
+
 // Import Bootstrap Compass integration
 @import "bootstrap-compass";
 
@@ -13,7 +15,14 @@
 // Import Lato font
 @import "lato";
 
+// Import sidebar styles
+@import "sidebar";
+
 $main_font_color: #ffffff;
+
+.content {
+  margin-left: 35px;
+}
 
 .navbar-top {
 
@@ -24,7 +33,6 @@ $main_font_color: #ffffff;
   @mixin topbar-links {
     color: $main_font_color;
     font: 12px 'LatoLight', sans-serif;
-    @include topbar-divider;
   }
 
   .navbar-brand {
@@ -42,6 +50,7 @@ $main_font_color: #ffffff;
     }
     a {
       @include topbar-links;
+      @include topbar-divider;
     }
   }
 
@@ -55,6 +64,10 @@ $main_font_color: #ffffff;
     .topbar-text, .topbar-text:hover {
       color: $main_font_color;
       @include topbar-links;
+    }
+
+    .divider {
+      @include topbar-divider;
     }
   }
 }
@@ -252,30 +265,40 @@ $main_font_color: #ffffff;
 
   h3 {
     color: #ffffff;
-    font: 400 18px Lato;
+    font: 18px 'Lato', sans-serif;
   }
   p {
     color: rgba(255, 255, 255, 0.5);
-    font: 400 14px Lato;
+    font: 14px 'Lato', sans-serif;
   }
   table {
     border-spacing: 10px;
     border-collapse: separate;
     color: #ededed;
-    font: 300 12px Lato;
+    font: 12px 'Lato', sans-serif;
+    width: 90%;
     a{
       text-decoration: none;
       color: #ededed;
     }
-   tr:first-child {
+
+    tr {
       td {
-        border-top: none;
+        line-height: 2em;
+        border-bottom: 1px solid #ffffff;
+      }
+      td:first-child {
+        border-bottom: none;
+      }
+    }
+
+    tr:last-child {
+      td {
+        border-bottom: none;
       }
     }
   }
-  td {
-    border-top: 1px solid #ffffff;
-  }
+
   .show-all {
     color: rgba(255, 255, 255, 0.5);
     font: 400 11px Lato;
