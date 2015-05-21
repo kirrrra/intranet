@@ -95,11 +95,12 @@ $main_font_color: #ffffff;
   }
 
   .heading {
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #ededed;
 
     h2 {
       color: $main_font_color;
       font: 36px 'LatoLight', sans-serif;
+      padding-bottom: 30px;
     }
 
     p {
@@ -119,7 +120,7 @@ $main_font_color: #ffffff;
     margin-top: 40px;
     list-style-type: none;
     line-height: 3em;
-    border-right: 1px solid #ffffff;
+    border-left: 1px solid #ededed;
 
     .count-documents-o {
       color: $main_font_color;
@@ -129,6 +130,9 @@ $main_font_color: #ffffff;
     }
   }
 
+  .first_column {
+    border-left: none;
+  }
 }
 
 #events {
@@ -173,6 +177,7 @@ $main_font_color: #ffffff;
     border-spacing: 10px;
     width: 80%;
     font: 14px 'LatoLight', sans-serif;
+    margin-bottom: 50px;
 
     tr:first-child {
       font: 14px 'LatoBold', sans-serif;
@@ -202,9 +207,12 @@ $main_font_color: #ffffff;
 
 
 #birthdays {
-  background-color: #4eb2de;
-  height: 215px;
+
+  $background_color: #4eb2de;
+
+  min-height: 215px;
   margin: 5px;
+  background-color: $background_color;
 
   h3 {
     padding-left: 25px;
@@ -227,17 +235,21 @@ $main_font_color: #ffffff;
 
   .caption-position {
     color: #4d4d4d;
-    font: 12px 'LatoLight';
+    font: 12px 'LatoLight', sans-serif;
     font-style: italic;
   }
 
 }
 
 #notifications {
-  background-color: #e7434a;
-  height: 215px;
+
+  $background_color: #e7434a;
+
+  min-height: 215px;
   margin: 5px;
   padding-left: 30px;
+  background-color: $background_color;
+
   h3 {
     color: #ffffff;
     font: 400 18px Lato;
@@ -265,7 +277,7 @@ $main_font_color: #ffffff;
 
 #news {
   background-color: #2db0a7;
-  height: 162px;
+  min-height: 162px;
   margin: 5px;
   padding-left: 30px;
   h3 {
@@ -324,7 +336,7 @@ $main_font_color: #ffffff;
     font: 400 18px Lato;
   }
   p {
-   color: #ededed;
+    color: #ededed;
     font: 700 12px Lato;
   }
   a {
