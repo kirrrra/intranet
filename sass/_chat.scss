@@ -39,11 +39,14 @@
   .sub-bar {
     border-bottom: 1px solid #808080;
     height: 35px;
-
+    i {
+      margin-top: 10px;
+    }
     p:first-child {
       color: #666666;
       font: 10px 'LatoLight', sans-serif;
       line-height: 1px;
+      margin-top: 10px;
     }
 
     p {

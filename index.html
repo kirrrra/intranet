@@ -526,8 +526,12 @@ $(document).ready(function() {
   }).call(this);
 
   $("#birthdays-carousel").owlCarousel({
-    navigation: false,
+    navigation: true,
     pagination: false,
+     navigationText: [
+      '<i class="fa fa-angle-left"></i>',
+      '<i class="fa fa-angle-right"></i>'
+    ],
     items: 1
   });
 
