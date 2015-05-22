@@ -117,7 +117,7 @@
     <div class="chat-container">
       <div class="row chat-window col-md-12">
         <div class="col-md-12">
-          <div class="panel panel-default">
+          <div class="panel panel-chat">
             <div class="top-bar">
               <div class="col-md-8">
                 <h3 class="panel-title">Чат</h3>
@@ -126,48 +126,47 @@
                 <a href="#"><i class="icon-close"></i></a>
               </div>
             </div>
-            <div class="row sub-bar">
-              <div class="col-md-2">
+            <div class="row row-no-padding sub-bar">
+              <div class="col-md-3 text-center">
                 <a href="#"><i class="icon-arrow-left"></i></a>
               </div>
-              <div class="col-md-8 text-center">
+              <div class="col-md-6 text-center">
                 <p>Исаев Абзал</p>
                 <p>Online</p>
               </div>
-              <div class="col-md-2">
+              <div class="col-md-3 text-center">
                 <a href="#"><i class="fa fa-ellipsis-v"></i></a>
               </div>
             </div>
             <div class="panel-body msg_container_base">
               <div class="body">
-                <div class="row msg_container base_sent">
-                  <div class="col-md-10">
-                    <div class="messages msg_sent">
-                      <p>that mongodb thing </p>
-                    </div>
-                  </div>
-                  <div class="col-md-2 avatar">
-                    <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
-                  </div>
-                </div>
                 <div class="row msg_container base_receive">
-                  <div class="col-md-2 avatar">
-                    <img src='images/chatpic.png' class=" img-responsive ">
+                  <div class="col-md-2">
+                    <div><img src="images/avatar_01.png" class="img-circle" alt=""></div>
                   </div>
                   <div class="col-md-10">
                     <div class="messages msg_receive">
-                      <p>that mongodb thing </p>
+                      <p>Здравствуй!</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row msg_container base_sent">
+                  <div class="col-md-10 col-md-offset-2">
+                    <div class="messages msg_sent">
+                      <p>Здравствуйте, Абзал</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="panel-footer">
-              <div class="input-group">
-                <input id="btn-input" type="text" class="form-control input-sm chat_input" placeholder="Write your message here..." />
-                <span class="input-group-btn">
-                  <button class="btn btn-primary btn-sm" id="btn-chat">Send</button>
-                </span>
+              <div class="row">
+                <div class="col-md-2">
+                  <a href="#"><i class="icon-plus"></i></a>
+                </div>
+                <div class="col-md-10">
+                    <input type="text" class="chat_input" placeholder="Написать в чат" />
+                </div>
               </div>
             </div>
           </div>
@@ -497,68 +496,72 @@
     <script src="javascripts/bootstrap.min.js"></script>
     <script src="javascripts/owl.carousel.min.js"></script>
     <script>
-$(document).ready(function() {
+      $(document).ready(function() {
 
-  (function() {
-    $(function() {
-      var collapseMyMenu, expandMyMenu, hideMenuTexts, showMenuTexts;
-      pullIconsRight = function() {
-        return $("nav.sidebar ul li a i.collapsed-element").addClass("pull-right");
-      }
-      unpullIconsRight = function() {
-        return $("nav.sidebar ul li a i.collapsed-element").removeClass("pull-right");
-      }
-      expandMyMenu = function() {
-        return $("nav.sidebar").removeClass("sidebar-menu-collapsed").addClass("sidebar-menu-expanded");
-      };
-      collapseMyMenu = function() {
-        return $("nav.sidebar").removeClass("sidebar-menu-expanded").addClass("sidebar-menu-collapsed");
-      };
-      showMenuTexts = function() {
-        return $("nav.sidebar ul a span.expanded-element").show();
-      };
-      hideMenuTexts = function() {
-        return $("nav.sidebar ul a span.expanded-element").hide();
-      };
-      return $("nav.sidebar").hover(function(e) {
-        if ($("nav.sidebar").hasClass("sidebar-menu-collapsed")) {
-          expandMyMenu();
-          showMenuTexts();
-          pullIconsRight();
-          $(this).css({
-            color: "#000"
+        (function() {
+          $(function() {
+            var collapseMyMenu, expandMyMenu, hideMenuTexts, showMenuTexts;
+            pullIconsRight = function() {
+              return $("nav.sidebar ul li a i.collapsed-element").addClass("pull-right");
+            }
+            unpullIconsRight = function() {
+              return $("nav.sidebar ul li a i.collapsed-element").removeClass("pull-right");
+            }
+            expandMyMenu = function() {
+              return $("nav.sidebar").removeClass("sidebar-menu-collapsed").addClass("sidebar-menu-expanded");
+            };
+            collapseMyMenu = function() {
+              return $("nav.sidebar").removeClass("sidebar-menu-expanded").addClass("sidebar-menu-collapsed");
+            };
+            showMenuTexts = function() {
+              return $("nav.sidebar ul a span.expanded-element").show();
+            };
+            hideMenuTexts = function() {
+              return $("nav.sidebar ul a span.expanded-element").hide();
+            };
+            return $("nav.sidebar").hover(function(e) {
+              if ($("nav.sidebar").hasClass("sidebar-menu-collapsed")) {
+                expandMyMenu();
+                showMenuTexts();
+                pullIconsRight();
+                $(this).css({
+                  color: "#000"
+                });
+              } else if ($(".sidebar").hasClass("sidebar-menu-expanded")) {
+                collapseMyMenu();
+                hideMenuTexts();
+                unpullIconsRight();
+                $(this).css({
+                  color: "#FFF"
+                });
+              }
+              return false;
+            });
           });
-        } else if ($(".sidebar").hasClass("sidebar-menu-expanded")) {
-          collapseMyMenu();
-          hideMenuTexts();
-          unpullIconsRight();
-          $(this).css({
-            color: "#FFF"
-          });
-        }
-        return false;
+
+        }).call(this);
+
+        $("#birthdays-carousel").owlCarousel({
+          navigation: true,
+          pagination: false,
+          navigationText: [
+            '<i class="fa fa-angle-left"></i>',
+            '<i class="fa fa-angle-right"></i>'
+          ],
+          items: 1
+        });
+
+        $("#footer-carousel").owlCarousel({
+          navigation: true,
+          navigationText: [
+            '<i class="fa fa-angle-left"></i>',
+            '<i class="fa fa-angle-right"></i>'
+          ],
+          pagination: false,
+          items: 5
+        });
+
       });
-    });
-
-  }).call(this);
-
-  $("#birthdays-carousel").owlCarousel({
-    navigation: false,
-    pagination: false,
-    items: 1
-  });
-
-  $("#footer-carousel").owlCarousel({
-    navigation: true,
-    navigationText: [
-      '<i class="fa fa-angle-left"></i>',
-      '<i class="fa fa-angle-right"></i>'
-    ],
-    pagination: false,
-    items: 5
-  });
-
-});
     </script>
   </body>
 </html>
