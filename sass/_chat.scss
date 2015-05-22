@@ -14,7 +14,7 @@
 
   .top-bar {
     height: 40px;
-    width: 190px;
+    width: 191px;
     background-color: #06949b;
     color: #ffffff;
     font: 14px 'Lato', sans-serif;
@@ -24,12 +24,41 @@
     }
     a {
       padding-top: 13px;
+      display: block;
+      color: #83cacd;
     }
+
   }
 
   .panel-body {
+    width: 191px;
     height: 100%;
     padding-bottom: 55px;
+    background-color: #ededed;
+    img {
+      height: 26px;
+      width: 26px;
+    }
+    p {
+      color: #4d4d4d;
+      font: 300 10px Lato;
+
+    }
+    .msg_receive {
+      p {
+        border-radius: 5px;
+        background-color: #c6dfea;
+        display: inline;
+        padding: 3px;
+      }
+    }
+    .msg_sent {
+      border-radius: 5px;
+      background-color: #f1dac4;
+      display: inline;
+      padding: 3px;
+      float: right;
+    }
 
     .body {
       height: 100%;
@@ -39,8 +68,10 @@
   .sub-bar {
     border-bottom: 1px solid #808080;
     height: 35px;
-    i {
-      margin-top: 10px;
+    background-color: #ededed;
+    a {
+      margin-top: 8px;
+      display: block;
     }
     p:first-child {
       color: #666666;
@@ -52,6 +83,16 @@
     p {
       color: #aeaeae;
       font: 10px 'LatoLight', sans-serif;
+
+    }
+  }
+  .panel-footer {
+    background-color: #ededed;
+    input {
+      border: 0px;
+      color: #949494;
+      font: 300 10px Lato;
+      background-color: #ededed;
     }
   }
 }
