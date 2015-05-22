@@ -475,22 +475,21 @@
         </div>
       </div>
 
-      <!--<div class="row row-no-padding">
-<div class="col-md-12">
-<div class="carousel text-center">
-<div id="footer-carousel" class="owl-carousel">
-<div><img src="images/slide1.jpg"></div>
-<div><img src="images/slide2.jpg"></div>
-<div><img src="images/slide3.jpg"></div>
-<div><img src="images/slide4.jpg"></div>
-<div><img src="images/slide5.jpg"></div>
-</div>
-</div>
-</div>
-</div> -->
+      <div class="row row-no-padding">
+        <div class="col-md-12">
+          <div class="carousel">
+            <div id="footer-carousel" class="owl-carousel">
+              <div><img src="images/slide1.jpg"></div>
+              <div><img src="images/slide2.jpg"></div>
+              <div><img src="images/slide3.jpg"></div>
+              <div><img src="images/slide4.jpg"></div>
+              <div><img src="images/slide5.jpg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
 
     </div>
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="javascripts/bootstrap.min.js"></script>
@@ -583,11 +582,11 @@ $(document).ready(function() {
   $("#footer-carousel").owlCarousel({
     navigation: true,
     navigationText: [
-      '<span class="arrow-left"></span>',
-      '<span class="arrow-right"></span>'
+      '<i class="icon-chevron-left icon-white"><</i>',
+      '<i class="icon-chevron-right icon-white"><</i>'
     ],
     pagination: false,
-    items: 4
+    items: 5
   });
 
 });
