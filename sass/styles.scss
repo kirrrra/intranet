@@ -236,7 +236,6 @@ body {
   }
 }
 
-
 #birthdays {
 
   $background_color: #4eb2de;
@@ -380,44 +379,50 @@ body {
   }
 }
 
-.ph {
-  height: 120px;
-  margin: 5px;
-  img {
+#links {
+  .tile {
     height: 120px;
-    width: 130px;
-    position: relative;
-  }
-  p {
-    position: absolute;
-    bottom: 0;
-    color: #ffffff;
-    font: 400 14px Lato;
-    margin-left: 10px;
+    margin: 5px;
+    img {
+      height: 120px;
+      width: 130px;
+      position: relative;
+    }
+    p {
+      position: absolute;
+      bottom: 0;
+      color: #ffffff;
+      font: 14px 'Lato', sans-serif;
+      margin-left: 10px;
 
+    }
   }
 }
 
-.otsu {
+#absent {
   background-color: #ea754a;
   height: 110px;
   margin: 5px;
   padding-left: 30px;
+
   h3 {
     color: #ffffff;
-    font: 400 18px Lato;
+    font: 400 18px 'Lato', sans-serif;
   }
+
   p {
     color: #ededed;
-    font: 700 12px Lato;
+    font: 700 12px 'Lato', sans-serif;
     line-height: 3px;
   }
+
   a {
     color: rgba(255, 255, 255, 0.5);
-    font: 400 11px Lato;
+    font: 400 11px 'Lato', sans-serif;
     margin-right: 30px;
   }
 }
+
 
 .carousel {
   border-top: 1px solid #c7c7c7;
