@@ -165,7 +165,7 @@
                   <a href="#"><i class="icon-plus"></i></a>
                 </div>
                 <div class="col-md-10">
-                    <input type="text" class="chat_input" placeholder="Написать в чат" />
+                  <input type="text" class="chat_input" placeholder="Написать в чат" />
                 </div>
               </div>
             </div>
@@ -476,7 +476,10 @@
       </div>
 
       <div class="row row-no-padding carousel">
-        <div class="col-md-11 text-right">
+        <div class="col-md-12 carousel-container">
+          <img src="images/arrow-left.png" alt="">
+
+
           <div id="footer-carousel" class="owl-carousel">
             <div><img src="images/slide1.jpg"></div>
             <div><img src="images/slide2.jpg"></div>
@@ -486,6 +489,9 @@
             <div><img src="images/slide5.jpg"></div>
             <div><img src="images/slide5.jpg"></div>
           </div>
+
+
+          <img src="images/arrow-right.png" alt="">
         </div>
       </div>
 
@@ -542,7 +548,7 @@
         }).call(this);
 
         $("#birthdays-carousel").owlCarousel({
-          navigation: true,
+          navigation: false,
           pagination: false,
           navigationText: [
             '<i class="fa fa-angle-left"></i>',
@@ -552,7 +558,7 @@
         });
 
         $("#footer-carousel").owlCarousel({
-          navigation: true,
+          navigation: false,
           navigationText: [
             '<i class="fa fa-angle-left"></i>',
             '<i class="fa fa-angle-right"></i>'
