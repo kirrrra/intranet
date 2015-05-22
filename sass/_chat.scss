@@ -6,11 +6,13 @@
   display: none;
   padding-left: 15px;
 
+
   .chat-window {
-    padding-left: 15px;
+    padding: 0;
   }
 
   .panel {
+
     width: 191px;
     border: none;
     margin-bottom: 0;
@@ -57,11 +59,14 @@
       }
     }
     .msg_sent {
-      border-radius: 10px;
-      background-color: #f1dac4;
-      display: inline;
-      padding: 5px;
-      float: right;
+      p {
+        border-radius: 10px;
+        background-color: #f1dac4;
+        display: inline;
+        padding: 5px;
+        float: right;
+        line-height: 1px;
+      }
     }
 
     .body {
