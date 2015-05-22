@@ -315,13 +315,13 @@
                         <p class="caption-position">заместитель-аппарата</p>
                       </div>
                     </div>
-                    <!--
-<div class="row all-birthdays">
-<div class="col-md-12 text-right">
-<a href="#">Показать всех</a>
-</div>
-</div>
--->
+
+                    <div class="row">
+                      <div class="col-md-12 text-right all-birthdays">
+                        <a href="#">Показать всех</a>
+                      </div>
+                    </div>
+
                   </div>
                 </div>
               </section>
@@ -496,101 +496,101 @@
     <script src="javascripts/bootstrap.min.js"></script>
     <script src="javascripts/owl.carousel.min.js"></script>
     <script>
-$(document).ready(function() {
+      $(document).ready(function() {
 
-  (function() {
-    $(function() {
-      var collapseMyMenu, expandMyMenu, hideMenuTexts, showMenuTexts;
-      pullIconsRight = function() {
-        return $("nav.sidebar ul li a i.collapsed-element").addClass("pull-right");
-      }
-      unpullIconsRight = function() {
-        return $("nav.sidebar ul li a i.collapsed-element").removeClass("pull-right");
-      }
-      expandMyMenu = function() {
-        return $("nav.sidebar").removeClass("sidebar-menu-collapsed").addClass("sidebar-menu-expanded");
-      };
-      collapseMyMenu = function() {
-        return $("nav.sidebar").removeClass("sidebar-menu-expanded").addClass("sidebar-menu-collapsed");
-      };
-      showMenuTexts = function() {
-        return $("nav.sidebar ul a span.expanded-element").show();
-      };
-      hideMenuTexts = function() {
-        return $("nav.sidebar ul a span.expanded-element").hide();
-      };
-      return $("nav.sidebar").hover(function(e) {
-        if ($("nav.sidebar").hasClass("sidebar-menu-collapsed")) {
-          expandMyMenu();
-          showMenuTexts();
-          pullIconsRight();
-          $(this).css({
-            color: "#000"
+        (function() {
+          $(function() {
+            var collapseMyMenu, expandMyMenu, hideMenuTexts, showMenuTexts;
+            pullIconsRight = function() {
+              return $("nav.sidebar ul li a i.collapsed-element").addClass("pull-right");
+            }
+            unpullIconsRight = function() {
+              return $("nav.sidebar ul li a i.collapsed-element").removeClass("pull-right");
+            }
+            expandMyMenu = function() {
+              return $("nav.sidebar").removeClass("sidebar-menu-collapsed").addClass("sidebar-menu-expanded");
+            };
+            collapseMyMenu = function() {
+              return $("nav.sidebar").removeClass("sidebar-menu-expanded").addClass("sidebar-menu-collapsed");
+            };
+            showMenuTexts = function() {
+              return $("nav.sidebar ul a span.expanded-element").show();
+            };
+            hideMenuTexts = function() {
+              return $("nav.sidebar ul a span.expanded-element").hide();
+            };
+            return $("nav.sidebar").hover(function(e) {
+              if ($("nav.sidebar").hasClass("sidebar-menu-collapsed")) {
+                expandMyMenu();
+                showMenuTexts();
+                pullIconsRight();
+                $(this).css({
+                  color: "#000"
+                });
+              } else if ($(".sidebar").hasClass("sidebar-menu-expanded")) {
+                collapseMyMenu();
+                hideMenuTexts();
+                unpullIconsRight();
+                $(this).css({
+                  color: "#FFF"
+                });
+              }
+              return false;
+            });
           });
-        } else if ($(".sidebar").hasClass("sidebar-menu-expanded")) {
-          collapseMyMenu();
-          hideMenuTexts();
-          unpullIconsRight();
-          $(this).css({
-            color: "#FFF"
+
+        }).call(this);
+
+        (function() {
+          $(function() {
+
+            return $(".js-toggle-chat").click(function() {
+              console.log('test');
+              return $(".chat-container").toggle();
+            });
           });
-        }
-        return false;
+
+        }).call(this);
+
+        (function() {
+
+          var changeChatHeight, viewPortHeight;
+
+          viewPortHeight = $(window).height();
+          changeChatHeight = function() {
+            $('.chat-container').css('height', viewPortHeight);
+            $('.chat-window').css('height', viewPortHeight);
+            $('.panel-chat').css('height', viewPortHeight - $('.top-bar').height() - $('.sub-bar').height() - $('.panel-footer').height() - 63);
+          };
+
+          changeChatHeight();
+
+          return $(window).resize(function() {
+            changeChatHeight();
+          });
+        }).call(this);
+
+        $("#birthdays-carousel").owlCarousel({
+          navigation: false,
+          pagination: false,
+          navigationText: [
+            '<i class="fa fa-angle-left"></i>',
+            '<i class="fa fa-angle-right"></i>'
+          ],
+          items: 1
+        });
+
+        $("#footer-carousel").owlCarousel({
+          navigation: true,
+          navigationText: [
+            '<span class="arrow-left"></span>',
+            '<span class="arrow-right"></span>'
+          ],
+          pagination: false,
+          items: 4
+        });
+
       });
-    });
-
-  }).call(this);
-
-  (function() {
-    $(function() {
-
-      return $(".js-toggle-chat").click(function() {
-        console.log('test');
-        return $(".chat-container").toggle();
-      });
-    });
-
-  }).call(this);
-
-  (function() {
-
-    var changeChatHeight, viewPortHeight;
-
-    viewPortHeight = $(window).height();
-    changeChatHeight = function() {
-      $('.chat-container').css('height', viewPortHeight);
-      $('.chat-window').css('height', viewPortHeight);
-      $('.panel-chat').css('height', viewPortHeight - $('.top-bar').height() - $('.sub-bar').height() - $('.panel-footer').height() - 63);
-    };
-
-    changeChatHeight();
-
-    return $(window).resize(function() {
-      changeChatHeight();
-    });
-  }).call(this);
-
-  $("#birthdays-carousel").owlCarousel({
-    navigation: false,
-    pagination: false,
-    navigationText: [
-      '<i class="fa fa-angle-left"></i>',
-      '<i class="fa fa-angle-right"></i>'
-    ],
-    items: 1
-  });
-
-  $("#footer-carousel").owlCarousel({
-    navigation: true,
-    navigationText: [
-      '<span class="arrow-left"></span>',
-      '<span class="arrow-right"></span>'
-    ],
-    pagination: false,
-    items: 4
-  });
-
-});
     </script>
   </body>
 </html>
