@@ -421,6 +421,7 @@ body {
 
 .carousel {
   border-top: 1px solid #c7c7c7;
+  padding-top: 10px;
 }
 .caret-left {
   position: relative;
@@ -470,4 +471,17 @@ body {
   border-left: 24px solid #e1e1e1;
   border-top: 24px solid transparent;
   border-bottom: 24px solid transparent;
+}
+.owl-theme .owl-controls .owl-buttons div {
+  position: absolute;
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-prev{
+  left: -45px;
+  top: 55px;
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-next{
+  right: -45px;
+  top: 55px;
 }
