@@ -32,6 +32,7 @@ body {
 
 .content {
   margin-left: 35px;
+  padding-right: 5px;
 }
 
 .navbar-top {
@@ -380,21 +381,23 @@ body {
 }
 
 #links {
+
   .tile {
     height: 120px;
     margin: 5px;
+
     img {
       height: 120px;
       width: 130px;
       position: relative;
     }
+
     p {
       position: absolute;
       bottom: 0;
       color: #ffffff;
       font: 14px 'Lato', sans-serif;
       margin-left: 10px;
-
     }
   }
 }
@@ -427,23 +430,38 @@ body {
 .carousel {
   border-top: 1px solid #c7c7c7;
   padding-top: 10px;
-}
-.carousel-container {
-  owl-carousel {
-    width: 70%;
+  padding-bottom: 10px;
+
+  .owl-carousel {
+    width: 90%;
+
+    .arrow-left {
+      background: url(../images/arrow-left.png) no-repeat;
+    }
+
+    .arrow-right {
+      background: url(../images/arrow-right.png) no-repeat;
+    }
+
   }
 }
 
-.owl-theme .owl-controls .owl-buttons div {
-  position: absolute;
-}
+.owl-theme {
+  .owl-controls {
+    .owl-buttons {
+      div {
+        position: absolute;
+      }
 
-.owl-theme .owl-controls .owl-buttons .owl-prev{
-  left: -45px;
-  top: 55px;
-}
+      .owl-prev{
+        left: -45px;
+        top: 55px;
+      }
 
-.owl-theme .owl-controls .owl-buttons .owl-next{
-  right: -45px;
-  top: 55px;
+      .owl-next{
+        right: -45px;
+        top: 55px;
+      }
+    }
+  }
 }

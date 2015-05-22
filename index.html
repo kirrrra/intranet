@@ -475,23 +475,21 @@
         </div>
       </div>
 
-      <div class="row row-no-padding carousel">
-        <div class="col-md-12 carousel-container">
-          <img src="images/arrow-left.png" alt="">
+      <div class="row row-no-padding">
+        <div class="col-md-12">
+          <div class="carousel text-center">
+<!--            <img class="arrow" src="images/arrow-left.png" alt="">-->
 
+            <div id="footer-carousel" class="owl-carousel">
+              <div><img src="images/slide1.jpg"></div>
+              <div><img src="images/slide2.jpg"></div>
+              <div><img src="images/slide3.jpg"></div>
+              <div><img src="images/slide4.jpg"></div>
+              <div><img src="images/slide5.jpg"></div>
+            </div>
 
-          <div id="footer-carousel" class="owl-carousel">
-            <div><img src="images/slide1.jpg"></div>
-            <div><img src="images/slide2.jpg"></div>
-            <div><img src="images/slide3.jpg"></div>
-            <div><img src="images/slide4.jpg"></div>
-            <div><img src="images/slide5.jpg"></div>
-            <div><img src="images/slide5.jpg"></div>
-            <div><img src="images/slide5.jpg"></div>
+<!--            <img class="arrow" src="images/arrow-right.png" alt="">-->
           </div>
-
-
-          <img src="images/arrow-right.png" alt="">
         </div>
       </div>
 
@@ -502,72 +500,72 @@
     <script src="javascripts/bootstrap.min.js"></script>
     <script src="javascripts/owl.carousel.min.js"></script>
     <script>
-      $(document).ready(function() {
+$(document).ready(function() {
 
-        (function() {
-          $(function() {
-            var collapseMyMenu, expandMyMenu, hideMenuTexts, showMenuTexts;
-            pullIconsRight = function() {
-              return $("nav.sidebar ul li a i.collapsed-element").addClass("pull-right");
-            }
-            unpullIconsRight = function() {
-              return $("nav.sidebar ul li a i.collapsed-element").removeClass("pull-right");
-            }
-            expandMyMenu = function() {
-              return $("nav.sidebar").removeClass("sidebar-menu-collapsed").addClass("sidebar-menu-expanded");
-            };
-            collapseMyMenu = function() {
-              return $("nav.sidebar").removeClass("sidebar-menu-expanded").addClass("sidebar-menu-collapsed");
-            };
-            showMenuTexts = function() {
-              return $("nav.sidebar ul a span.expanded-element").show();
-            };
-            hideMenuTexts = function() {
-              return $("nav.sidebar ul a span.expanded-element").hide();
-            };
-            return $("nav.sidebar").hover(function(e) {
-              if ($("nav.sidebar").hasClass("sidebar-menu-collapsed")) {
-                expandMyMenu();
-                showMenuTexts();
-                pullIconsRight();
-                $(this).css({
-                  color: "#000"
-                });
-              } else if ($(".sidebar").hasClass("sidebar-menu-expanded")) {
-                collapseMyMenu();
-                hideMenuTexts();
-                unpullIconsRight();
-                $(this).css({
-                  color: "#FFF"
-                });
-              }
-              return false;
-            });
+  (function() {
+    $(function() {
+      var collapseMyMenu, expandMyMenu, hideMenuTexts, showMenuTexts;
+      pullIconsRight = function() {
+        return $("nav.sidebar ul li a i.collapsed-element").addClass("pull-right");
+      }
+      unpullIconsRight = function() {
+        return $("nav.sidebar ul li a i.collapsed-element").removeClass("pull-right");
+      }
+      expandMyMenu = function() {
+        return $("nav.sidebar").removeClass("sidebar-menu-collapsed").addClass("sidebar-menu-expanded");
+      };
+      collapseMyMenu = function() {
+        return $("nav.sidebar").removeClass("sidebar-menu-expanded").addClass("sidebar-menu-collapsed");
+      };
+      showMenuTexts = function() {
+        return $("nav.sidebar ul a span.expanded-element").show();
+      };
+      hideMenuTexts = function() {
+        return $("nav.sidebar ul a span.expanded-element").hide();
+      };
+      return $("nav.sidebar").hover(function(e) {
+        if ($("nav.sidebar").hasClass("sidebar-menu-collapsed")) {
+          expandMyMenu();
+          showMenuTexts();
+          pullIconsRight();
+          $(this).css({
+            color: "#000"
           });
-
-        }).call(this);
-
-        $("#birthdays-carousel").owlCarousel({
-          navigation: false,
-          pagination: false,
-          navigationText: [
-            '<i class="fa fa-angle-left"></i>',
-            '<i class="fa fa-angle-right"></i>'
-          ],
-          items: 1
-        });
-
-        $("#footer-carousel").owlCarousel({
-          navigation: false,
-          navigationText: [
-            '<i class="fa fa-angle-left"></i>',
-            '<i class="fa fa-angle-right"></i>'
-          ],
-          pagination: false,
-          items: 5
-        });
-
+        } else if ($(".sidebar").hasClass("sidebar-menu-expanded")) {
+          collapseMyMenu();
+          hideMenuTexts();
+          unpullIconsRight();
+          $(this).css({
+            color: "#FFF"
+          });
+        }
+        return false;
       });
+    });
+
+  }).call(this);
+
+  $("#birthdays-carousel").owlCarousel({
+    navigation: false,
+    pagination: false,
+    navigationText: [
+      '<i class="fa fa-angle-left"></i>',
+      '<i class="fa fa-angle-right"></i>'
+    ],
+    items: 1
+  });
+
+  $("#footer-carousel").owlCarousel({
+    navigation: true,
+    navigationText: [
+      '<span class="arrow-left"></span>',
+      '<span class="arrow-right"></span>'
+    ],
+    pagination: false,
+    items: 4
+  });
+
+});
     </script>
   </body>
 </html>
