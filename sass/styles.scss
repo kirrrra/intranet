@@ -59,7 +59,13 @@ body {
       padding-right: 25px;
       @include topbar-divider;
     }
+
     a {
+      @include topbar-links;
+      @include topbar-divider;
+    }
+
+    a.open {
       @include topbar-links;
       @include topbar-divider;
     }
@@ -339,6 +345,16 @@ body {
     list-style-type: none;
     margin-right: 30px;
     margin-top: 10px;
+
+    .icon0, .icon1, .icon2, .icon3, .icon4 {
+      background: url('../images/icons.png') no-repeat;
+    }
+
+    .icon0 {
+      left: 0;
+      width: 16px;
+      background-position: -16px 0px;
+    }
 
     li {
       display: inline;
