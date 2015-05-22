@@ -115,7 +115,7 @@
 
     <!--chat-->
     <div class="chat-container">
-      <div class="row chat-window col-md-12">
+      <div class="row-no-padding chat-window col-md-12">
         <div class="col-md-12">
           <div class="panel panel-chat">
             <div class="top-bar">
@@ -550,6 +550,24 @@ $(document).ready(function() {
       });
     });
 
+  }).call(this);
+
+  (function() {
+
+    var changeChatHeight, viewPortHeight;
+
+    viewPortHeight = $(window).height();
+    changeChatHeight = function() {
+      $('.chat-container').css('height', viewPortHeight);
+      $('.chat-window').css('height', viewPortHeight);
+      $('.panel-chat').css('height', viewPortHeight - $('.top-bar').height() - $('.sub-bar').height() - $('.panel-footer').height() - 65);
+    };
+
+    changeChatHeight();
+
+    return $(window).resize(function() {
+      changeChatHeight();
+    });
   }).call(this);
 
   $("#birthdays-carousel").owlCarousel({

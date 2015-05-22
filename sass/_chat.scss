@@ -4,6 +4,11 @@
   top: 0;
   z-index: 1000;
   display: none;
+  padding-left: 15px;
+
+  .chat-window {
+    padding-left: 15px;
+  }
 
   .panel {
     width: 191px;
