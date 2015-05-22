@@ -424,6 +424,7 @@ body {
 }
 .caret-left {
   position: relative;
+  margin-top: 30px;
 }
 
 .caret-left:before {
@@ -434,6 +435,7 @@ body {
   border-right: 25px solid #666666;
   border-top: 25px solid transparent;
   border-bottom: 25px solid transparent;
+
 }
 
 .caret-left:after {
@@ -441,12 +443,13 @@ body {
   position: absolute;
   left: 1px;
   top: 1px;
-  border-right: 24px solid #eeeeee;
+  border-right: 24px solid #e1e1e1;
   border-top: 24px solid transparent;
   border-bottom: 24px solid transparent;
 }
 .caret-right {
   position: relative;
+  margin-top: 30px;
 }
 
 .caret-right:before {
@@ -464,7 +467,7 @@ body {
   position: absolute;
   left: 0;
   top: 1px;
-  border-left: 24px solid #eeeeee;
+  border-left: 24px solid #e1e1e1;
   border-top: 24px solid transparent;
   border-bottom: 24px solid transparent;
 }
