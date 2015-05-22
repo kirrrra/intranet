@@ -57,56 +57,56 @@
     <nav class='sidebar sidebar-menu-collapsed'>
       <ul>
         <li>
-          <a class='expandable' href='#' title='Dashboard'>
-            <span class='expanded-element'>Dashboard</span>
+          <a class='expandable' href='#'>
+            <span class='expanded-element'>Главная</span>
             <i class="icon-home collapsed-element"></i>
           </a>
         </li>
         <li>
-          <a class='expandable' href='#' title='APIs'>
-            <span class='expanded-element'>APIs</span>
+          <a class='expandable' href='#'>
+            <span class='expanded-element'>Администрирование</span>
             <i class="icon-users collapsed-element"></i>
           </a>
         </li>
         <li>
-          <a class='expandable' href='#' title='Settings'>
-            <span class='expanded-element'>Settings</span>
+          <a class='expandable' href='#'>
+            <span class='expanded-element'>Справочники</span>
             <i class="icon-book-open collapsed-element"></i>
           </a>
         </li>
         <li>
-          <a class='expandable' href='#' title='Account'>
-            <span class='expanded-element'>Account</span>
+          <a class='expandable' href='#'>
+            <span class='expanded-element'>Форум</span>
             <i class="icon-microphone collapsed-element"></i>
           </a>
         </li>
         <li>
-          <a class='expandable' href='#' title='Account'>
-            <span class='expanded-element'>Account</span>
+          <a class='expandable' href='#'>
+            <span class='expanded-element'>Библиотека</span>
             <i class="icon-notebook collapsed-element"></i>
           </a>
         </li>
         <li>
-          <a class='expandable' href='#' title='Account'>
-            <span class='expanded-element'>Account</span>
+          <a class='expandable' href='#'>
+            <span class='expanded-element'>Задачи</span>
             <i class="icon-pin collapsed-element"></i>
           </a>
         </li>
         <li>
-          <a class='expandable' href='#' title='Account'>
-            <span class='expanded-element'>Account</span>
+          <a class='expandable' href='#'>
+            <span class='expanded-element'>АВФ</span>
             <i class="icon-camcorder collapsed-element"></i>
           </a>
         </li>
         <li>
-          <a class='expandable' href='#' title='Account'>
-            <span class='expanded-element'>Account</span>
+          <a class='expandable' href='#'>
+            <span class='expanded-element'>Обходной лист</span>
             <i class="icon-doc collapsed-element"></i>
           </a>
         </li>
         <li>
-          <a class='expandable' href='#' title='Account'>
-            <span class='expanded-element'>Account</span>
+          <a class='expandable' href='#'>
+            <span class='expanded-element'>Фотогалерея</span>
             <i class="icon-camera collapsed-element"></i>
           </a>
         </li>
@@ -456,31 +456,32 @@
           </div>
 
         </div>
+        <div class="row carousel">
+          <!--
+<div class="col-md-1 text-right">
+<div class="caret-left"></div>
+</div>
+-->
+          <div class="col-md-11 text-right">
+            <div id="footer-carousel" class="owl-carousel">
+              <div><img src="images/slide1.jpg"></div>
+              <div><img src="images/slide2.jpg"></div>
+              <div><img src="images/slide3.jpg"></div>
+              <div><img src="images/slide4.jpg"></div>
+              <div><img src="images/slide5.jpg"></div>
+              <div><img src="images/slide5.jpg"></div>
+              <div><img src="images/slide5.jpg"></div>
+            </div>
+          </div>
+          <!--
+<div class="col-md-1 text-left">
+<div class="caret-right"></div>
+</div>
+-->
+        </div>
       </div>
 
-      <div class="row carousel">
-<!--
-        <div class="col-md-1 text-right">
-          <div class="caret-left"></div>
-        </div>
--->
-        <div class="col-md-11 text-right">
-          <div id="footer-carousel" class="owl-carousel">
-            <div><img src="images/slide1.jpg"></div>
-            <div><img src="images/slide2.jpg"></div>
-            <div><img src="images/slide3.jpg"></div>
-            <div><img src="images/slide4.jpg"></div>
-            <div><img src="images/slide5.jpg"></div>
-            <div><img src="images/slide5.jpg"></div>
-            <div><img src="images/slide5.jpg"></div>
-          </div>
-        </div>
-<!--
-        <div class="col-md-1 text-left">
-          <div class="caret-right"></div>
-        </div>
--->
-      </div>
+
     </div>
 
 
@@ -493,6 +494,12 @@ $(document).ready(function() {
   (function() {
     $(function() {
       var collapseMyMenu, expandMyMenu, hideMenuTexts, showMenuTexts;
+      pullIconsRight = function() {
+        return $("nav.sidebar ul li a i.collapsed-element").addClass("pull-right");
+      }
+      unpullIconsRight = function() {
+        return $("nav.sidebar ul li a i.collapsed-element").removeClass("pull-right");
+      }
       expandMyMenu = function() {
         return $("nav.sidebar").removeClass("sidebar-menu-collapsed").addClass("sidebar-menu-expanded");
       };
@@ -505,16 +512,18 @@ $(document).ready(function() {
       hideMenuTexts = function() {
         return $("nav.sidebar ul a span.expanded-element").hide();
       };
-      return $(".nav.sidebar").hover(function(e) {
-        if ($(this).parent("nav.sidebar").hasClass("sidebar-menu-collapsed")) {
+      return $("nav.sidebar").hover(function(e) {
+        if ($("nav.sidebar").hasClass("sidebar-menu-collapsed")) {
           expandMyMenu();
           showMenuTexts();
+          pullIconsRight();
           $(this).css({
             color: "#000"
           });
-        } else if ($(this).parent("nav.sidebar").hasClass("sidebar-menu-expanded")) {
+        } else if ($(".sidebar").hasClass("sidebar-menu-expanded")) {
           collapseMyMenu();
           hideMenuTexts();
+          unpullIconsRight();
           $(this).css({
             color: "#FFF"
           });

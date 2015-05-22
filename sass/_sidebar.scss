@@ -13,31 +13,36 @@ nav.sidebar {
   background-color: #06949b;
   color: white;
   padding: 10px 15px;
-}
-nav.sidebar ul {
-  margin: 0;
-  padding: 0;
-}
-nav.sidebar ul li {
-  margin: 0;
-  padding: 0;
-  margin-top: 10px;
-  list-style-type: none;
-}
-nav.sidebar ul li a.expandable {
-  outline: 0;
-  color: white;
-  text-decoration: none;
-}
-nav.sidebar ul li a.expandable:hover {
-  color: #bbbbbb;
-}
-nav.sidebar ul li a.expandable span.expanded-element {
-  margin-left: 2px;
-  display: none;
-  position: relative;
-  bottom: 2px;
-}
-nav.sidebar ul li.active a.expandable {
-  color: white !important;
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin: 0;
+      padding: 0;
+      margin-top: 10px;
+      list-style-type: none;
+
+      a.expandable {
+        outline: 0;
+        color: white;
+        text-decoration: none;
+        font: 12px 'LatoLight', sans-serif;
+
+        span.expanded-element {
+          margin-left: 2px;
+          display: none;
+          position: relative;
+          bottom: 2px;
+        }
+      }
+
+      a.expandable:hover {
+        color: #bbbbbb;
+      }
+
+
+    }
+  }
 }
