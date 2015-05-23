@@ -573,16 +573,23 @@ $(document).ready(function() {
 
   (function() {
 
-    var changeChatHeight, viewPortHeight;
+    var changeChatHeight, changeSidebarHeight, viewPortHeight, documentHeight;
 
     viewPortHeight = $(window).height();
+    documentHeight = $(document).height();
+
     changeChatHeight = function() {
       $('.chat-container').css('height', viewPortHeight);
       $('.chat-window').css('height', viewPortHeight);
       $('.panel-chat').css('height', viewPortHeight - $('.top-bar').height() - $('.sub-bar').height() - $('.panel-footer').height() - 63);
     };
 
+    changeSidebarHeight = function() {
+      $('nav.sidebar').css('height', documentHeight);
+    }
+
     changeChatHeight();
+    changeSidebarHeight();
 
     return $(window).resize(function() {
       changeChatHeight();
