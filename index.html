@@ -306,7 +306,7 @@
                       </div>
                       <div class="col-md-6">
 
-                        <div id="birthdays-carousel" class="cycle-slideshow" data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-prev="#birthdays .prev" data-cycle-next="#birthdays .next" data-cycle-center-horz=true data-cycle-center-vert=true data-cycle-carousel-visible="1">
+                        <div id="birthdays-carousel" class="cycle-slideshow" data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-prev="#birthdays .prev" data-cycle-next="#birthdays .next" data-cycle-center-vert=true data-cycle-carousel-visible="1">
                           <img src="images/avatar_01.png" class="img-circle" alt="">
                           <img src="images/avatar_01.png" class="img-circle" alt="">
                           <img src="images/avatar_01.png" class="img-circle" alt="">
@@ -487,18 +487,25 @@
           <span class="prev pull-right"></span>
         </div>
         <div class="col-md-10">
-          <div class="carousel text-center">
-            <div class="cycle-slideshow" data-cycle-fx="carousel" data-cycle-timeout="1000" data-cycle-prev="#footer-carousel .prev" data-cycle-next="#footer-carousel .next" data-cycle-center-horz=true data-cycle-carousel-fluid=true data-cycle-carousel-visible="5">
-              <img src="images/slide1.jpg">
-              <img src="images/slide2.jpg">
-              <img src="images/slide3.jpg">
-              <img src="images/slide4.jpg">
-              <img src="images/slide5.jpg">
-              <img src="images/slide5.jpg">
-              <img src="images/slide4.jpg">
-              <img src="images/slide3.jpg">
-              <img src="images/slide2.jpg">
-              <img src="images/slide1.jpg">
+          <div class="carousel">
+            <div class="cycle-slideshow"
+              data-cycle-slides="> a"
+              data-cycle-fx=carousel
+              data-cycle-timeout=0
+              data-cycle-carousel-visible=5
+              data-cycle-carousel-fluid=true
+              data-cycle-prev="#footer-carousel .prev"
+              data-cycle-next="#footer-carousel .next">
+              <a href="#"><img src="images/slide1.jpg"></a>
+              <a href="#"><img src="images/slide2.jpg"></a>
+              <a href="#"><img src="images/slide3.jpg"></a>
+              <a href="#"><img src="images/slide4.jpg"></a>
+              <a href="#"><img src="images/slide5.jpg"></a>
+              <a href="#"><img src="images/slide1.jpg"></a>
+              <a href="#"><img src="images/slide1.jpg"></a>
+              <a href="#"><img src="images/slide1.jpg"></a>
+              <a href="#"><img src="images/slide1.jpg"></a>
+              <a href="#"><img src="images/slide1.jpg"></a>
             </div>
           </div>
         </div>
@@ -513,7 +520,6 @@
     <script src="javascripts/bootstrap.min.js"></script>
     <script src="javascripts/jquery.cycle2.min.js"></script>
     <script src="javascripts/jquery.cycle2.carousel.min.js"></script>
-    <script src="javascripts/jquery.cycle2.center.min.js"></script>
     <script>
 $(document).ready(function() {
 
