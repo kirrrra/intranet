@@ -436,6 +436,15 @@ body {
 #footer-carousel {
 
   .prev, .next {
+
+  }
+
+  .prev {
+    float: left;
+  }
+
+  .next {
+    float: right;
   }
 
   .carousel {
