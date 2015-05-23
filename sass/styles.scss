@@ -33,6 +33,11 @@ body {
 .content {
   margin-left: 30px;
   padding-right: 10px;
+
+  section h3 {
+    color: #ffffff;
+    font: 18px 'Lato', sans-serif;
+  }
 }
 
 .navbar-top {
@@ -184,7 +189,6 @@ body {
 
   h3 {
     color: #4d4d4d;
-    font: 18px 'Lato', sans-serif;
     margin-left: 40px;
   }
 
@@ -253,8 +257,6 @@ body {
 
   h3 {
     padding-left: 25px;
-    color: #ffffff;
-    font: 18px 'Lato', sans-serif;
   }
 
   #birthdays-carousel {
@@ -300,10 +302,6 @@ body {
   padding-left: 30px;
   background-color: $background_color;
 
-  h3 {
-    color: #ffffff;
-    font: 18px 'Lato', sans-serif;
-  }
   p {
     color: #cce4f0;
     font: 14px 'Lato', sans-serif;
@@ -348,11 +346,6 @@ body {
   height: 162px;
   margin: 5px;
   padding-left: 30px;
-
-  h3 {
-    color: #ffffff;
-    font: 400 18px Lato;
-  }
 
   .iconbar {
     list-style-type: none;
@@ -427,11 +420,6 @@ body {
   margin: 5px;
   padding-left: 30px;
 
-  h3 {
-    color: #ffffff;
-    font: 400 18px 'Lato', sans-serif;
-  }
-
   p {
     color: #ededed;
     font: 700 12px 'Lato', sans-serif;
@@ -453,8 +441,6 @@ body {
   .carousel {
     border-top: 1px solid #c7c7c7;
     padding-top: 10px;
-    padding-bottom: 10px;
-    display: inline;
   }
 }
 
