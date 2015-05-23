@@ -301,12 +301,19 @@
                     <h3>Дни рождения</h3>
 
                     <div class="row">
-                      <div class="col-md-6 col-md-offset-3 text-center">
-                        <div id="birthdays-carousel" class="owl-carousel">
-                          <div><img src="images/avatar_01.png" class="img-circle" alt=""></div>
-                          <div><img src="images/avatar_01.png" class="img-circle" alt=""></div>
-                          <div><img src="images/avatar_01.png" class="img-circle" alt=""></div>
+                      <div class="col-md-3">
+                        <span class="prev pull-right"></span>
+                      </div>
+                      <div class="col-md-6">
+
+                        <div id="birthdays-carousel" class="cycle-slideshow" data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-prev="#birthdays .prev" data-cycle-next="#birthdays .next" data-cycle-center-horz=true data-cycle-center-vert=true data-cycle-carousel-visible="1">
+                          <img src="images/avatar_01.png" class="img-circle" alt="">
+                          <img src="images/avatar_01.png" class="img-circle" alt="">
+                          <img src="images/avatar_01.png" class="img-circle" alt="">
                         </div>
+                      </div>
+                      <div class="col-md-3">
+                        <span class="next pull-right"></span>
                       </div>
                     </div>
                     <div class="row">
@@ -475,27 +482,38 @@
         </div>
       </div>
 
-<!--
-      <div class="row row-no-padding">
-        <div class="col-md-12">
-          <div class="carousel">
-            <div id="footer-carousel" class="owl-carousel">
-              <div><img src="images/slide1.jpg"></div>
-              <div><img src="images/slide2.jpg"></div>
-              <div><img src="images/slide3.jpg"></div>
-              <div><img src="images/slide4.jpg"></div>
-              <div><img src="images/slide5.jpg"></div>
+      <div id="footer-carousel" class="row row-no-padding">
+        <div class="col-md-1">
+          <span class="prev pull-right"></span>
+        </div>
+        <div class="col-md-10">
+          <div class="carousel text-center">
+            <div class="cycle-slideshow" data-cycle-fx="carousel" data-cycle-timeout="1000" data-cycle-prev="#footer-carousel .prev" data-cycle-next="#footer-carousel .next" data-cycle-center-horz=true data-cycle-carousel-fluid=true data-cycle-carousel-visible="5">
+              <img src="images/slide1.jpg">
+              <img src="images/slide2.jpg">
+              <img src="images/slide3.jpg">
+              <img src="images/slide4.jpg">
+              <img src="images/slide5.jpg">
+              <img src="images/slide5.jpg">
+              <img src="images/slide4.jpg">
+              <img src="images/slide3.jpg">
+              <img src="images/slide2.jpg">
+              <img src="images/slide1.jpg">
             </div>
           </div>
         </div>
+        <div class="col-md-1">
+          <span class="next pull-left"></span>
+        </div>
       </div>
--->
 
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="javascripts/bootstrap.min.js"></script>
-    <script src="javascripts/owl.carousel.min.js"></script>
+    <script src="javascripts/jquery.cycle2.min.js"></script>
+    <script src="javascripts/jquery.cycle2.carousel.min.js"></script>
+    <script src="javascripts/jquery.cycle2.center.min.js"></script>
     <script>
 $(document).ready(function() {
 
@@ -577,26 +595,6 @@ $(document).ready(function() {
       $(this).addClass('active').siblings().removeClass('active');
     });
   }).call(this);
-
-  $("#birthdays-carousel").owlCarousel({
-    navigation: true,
-    pagination: false,
-    navigationText: [
-      '<i class="icon-chevron-left icon-white"><</i>',
-      '<i class="icon-chevron-right icon-white">></i>'
-    ],
-    items: 1
-  });
-
-  $("#footer-carousel").owlCarousel({
-    navigation: true,
-    pagination: false,
-    navigationText: [
-      '<i class="icon-chevron-left icon-white"><</i>',
-      '<i class="icon-chevron-right icon-white">></i>'
-    ],
-    items: 5
-  });
 
 });
     </script>
